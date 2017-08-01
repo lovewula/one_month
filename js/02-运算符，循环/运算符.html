@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>please enter your title</title>
+		<meta charset="gbk">
+		<meta name="Author" content="">
+		<style type='text/css'>
+			*{ margin:0; padding:0;}
+		</style>
+		<script type="text/javascript" src=''></script>
+	</head>
+	<body>
+		
+		<script type="text/javascript">
+			
+			/*
+				关于JavaScript里面的符号：
+					运算符： + - * / % ()
+						当运算符两边不是数字的时候，会出现各种情况（隐式类型转化）
+							1.+号两边只要出现字符串，就是拼接
+							2.布尔值和 数字 运算，true => 1   false => 0;
+							3. - * / % 会强制转化为数字进行运算
+					赋值符： = += -= *= /= %= ++ --
+					比较符：> < == >= <= != === !==
+					逻辑运算： &&  ||  !
+
+			*/
+			/*运算符*/
+				//var a = 5;
+				//var b = 6;
+				//alert( a%b );
+				//alert( 0.1 + 0.2 );
+				
+				/*
+				var a = 100;
+				var b = '1';
+				alert( true+'px' );
+				*/
+				/*
+				var a = true;
+				alert( a+1 );
+				*/
+				/*
+				var a = '10';
+				alert( a-5 );
+				*/
+		
+			/*赋值符号*/
+				//var a = 3;
+				//a += '2'; // a = a + '2'
+				//a -= '2'; // a = a - '2'
+				//a ++; // a = a + 1;
+				//a --; //a = a - 1;
+				//alert( a );
+				
+				//var b = a++; //  b = a; a = a + 1;
+				//var b = ++a; //  a = a + 1; b = a;
+				
+				//alert(b);
+
+			//比较符
+				/*
+				var a = 10;
+				var b = 6;
+				alert( a!=b );
+				*/
+				/*
+				var a = '60';
+				var b = '61';
+				alert( a<b );
+				*/
+				/*
+				var a = '10px';
+				var b = 5;
+				alert( NaN == NaN );
+				*/
+				/*
+				var a = '100';
+				var b = 100;
+				alert( a === b );
+				*/
+				
+
+			//逻辑符
+				/*
+					&& 与 遇到假就停
+					|| 或 遇到真就停
+					!  非 一定会返回一个布尔值
+
+					那些数据在做判断的时候是假： false 0  '' null undefined NaN 
+
+					
+				*/
+				//var a = 3<2 && 1<4; //  false && true
+				//var a = 5<3 || 5>6; // false || false;
+				//var a = 5>6 || 3>4 || 5; // false || false || 5
+
+				//var a = 0 || '' || 5-5; // 0 || '' || 0
+				//var a = 5 || 0 || '';
+				//var a = 5 && 0 && '';
+				//var a = 5 || 3 && 0;  // 同时存在 先执行 && 在执行 ||
+
+				// var a = !'false';
+				// alert( a );
+
+				// var a = '123' ;
+				// alert(typeof a);
+				// alert( typeof Number(a))
+				
+
+		</script>
+	</body>
+</html>;   

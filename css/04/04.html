@@ -1,0 +1,495 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>04.md</title></head>
+<body><h1>CSS第一节课</h1>
+<h2><code>CSS</code>是什么</h2>
+<ul><li>
+<code>css</code>全称<strong>层叠样式表</strong>(<code>Cascading Style Sheet</code>)</li>
+</ul>
+<h2><code>CSS</code>能干啥</h2>
+<ul><li>
+<code>CSS</code>主要可以控制页面的外观</li>
+</ul>
+<h2><code>CSS</code>怎么学</h2>
+<ul><li>
+多敲多练多思考
+cha</li>
+</ul>
+<h2><code>CSS</code>怎么用</h2>
+<h3><code>CSS</code>的引入方式</h3>
+<ul><li>
+<p>内联样式（直接写在标签里面）</p>
+<ul><li>
+<pre><code class='language-html' lang='html'>
+&lt;div style=&quot;width:100px;height:100px;background:skyblue;&quot;&gt;
+ 	我是一个div标签
+&lt;/div&gt;
+</code></pre>
+</li>
+<li>
+<p>缺点：造成代码大量冗余 不利于后期维护</p>
+</li>
+<li>
+<p>行内的元素的优先级是最高的</p>
+</li>
+</ul>
+</li>
+<li>
+<p>内部样式</p>
+<ul><li>
+<pre><code class='language-html' lang='html'>
+&lt;style type=&quot;text/css&quot;&gt;
+  
+&lt;/style&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p>外部样式</p>
+<ul><li>
+定义一个css文件,存放所有的<code>css</code>文件</li>
+<li>
+在需要的时候通过<code>link</code>引入正确的<code>css</code>文件</li>
+</ul>
+</li>
+</ul>
+<h3><code>CSS</code>选择器</h3>
+<ul><li>
+<p>元素选择器</p>
+<ul><li>
+选中相同的元素，对相同的元素设置同一种<code>css</code>样式</li>
+<li>
+<code>div{width:50px;height:50px;background:red;}</code></li>
+<li>
+这样会选中页面中所有的<code>div</code>元素</li>
+</ul>
+</li>
+<li>
+<p><code>class</code>选择器</p>
+<ul><li>
+给标签设置一个<code>class</code>属性，前面一个<code>.</code></li>
+<li>
+<code>.wula{width:50px;height:50px;background:red;}</code></li>
+<li>
+一般是给具有相同的元素设置同一个<code>class</code></li>
+</ul>
+</li>
+<li>
+<p><code>id</code>选择器</p>
+<ul><li>
+给标签设置一个<code>id</code>,前面一定要加上一个<code>#</code>号</li>
+<li>
+<code>#wula{width:50px;height:50px;background:red;}</code></li>
+<li>
+<code>id</code>具有唯一性，一个页面只能出现一次</li>
+</ul>
+</li>
+<li>
+<p>群组选择器</p>
+<ul><li>
+对几个相同的选择器进行操作时，一个一个分开写显得代码冗余</li>
+<li>
+<code>p,span,div{width: 150px;height: 150px;background: skyblue;}</code></li>
+<li>
+<code>.box,.wrap,.box1{width: 150px;height: 150px;background: skyblue;}</code></li>
+<li>
+两个选择器之间必须用<code>,</code>逗号分开</li>
+</ul>
+</li>
+<li>
+<p>相邻选择器</p>
+<ul><li>
+相邻选择器操作的对象的该元素的同级元素</li>
+<li>
+<code>div+p{font-size:18px;}</code></li>
+<li>
+选择<code>div</code>相邻的下一个兄弟元素<code>p</code></li>
+</ul>
+</li>
+<li>
+<p>子代选择器</p>
+<ul><li>
+选择某个元素下面的子元素</li>
+<li>
+<code>div &gt; p{font-size:18px;}</code></li>
+</ul>
+</li>
+<li>
+<p>后代选择器</p>
+<ul><li>
+选中某元素的后代</li>
+<li>
+<code>div p{font-size:18px;}</code></li>
+<li>
+必须用空格隔开</li>
+</ul>
+</li>
+</ul>
+<h3><code>CSS</code>文字属性</h3>
+<ul><li>
+<p><code>font-family</code> 字体类型</p>
+<ul><li>
+我们在定义的时候要注意，要是用户电脑上没这个字体的时候怎么办</li>
+<li>
+<code>.box{font-family:&quot;Microsoft yahei&quot;,&quot;楷体&quot;}</code></li>
+<li>
+默认情况下，浏览器的字体是微软雅黑。中文字体常用的有宋体、微软雅黑，英文字体比较常用的是<code>Times New Roman</code>、<code>Arial</code></li>
+</ul>
+</li>
+<li>
+<p><code>font-size</code> 字体大小</p>
+<ul><li>
+<p>可以采用关键字为单位</p>
+<ul><li>
+<code>xx-small</code>        最小 <code>10px</code></li>
+<li>
+<code>x-small</code>          较小 <code>12px</code></li>
+<li>
+<code>small</code>              小   <code>13px</code></li>
+<li>
+<code>medium</code>            正常   <code>16px</code></li>
+<li>
+<code>large</code>              大    <code>18px</code></li>
+<li>
+<code>x-large</code>          较大  <code>24px</code></li>
+<li>
+<code>xx-large</code>        最大   <code>32px</code></li>
+<li>
+这些都是相对浏览器默认情况下而言。对于这些属性值，我们完全不需要记忆，在实际开发中，很少使用这种方式来表达字体的大小</li>
+</ul>
+</li>
+<li>
+<p>采用像素(<code>px</code>)为单位</p>
+<ul><li>
+<p><code>px</code>（<code>pixel</code>）就是像素，<code>px</code>就是一张图片中最小的点，或者是计算机屏幕最小的点</p>
+<p>一台计算机的分辨率是<code>1024px×768px</code>指的就是“计算机宽是1024个小方点，高是768个小方点”</p>
+</li>
+</ul>
+</li>
+<li>
+<p>除了像素以外，还有<code>em、rem、百分比等等</code></p>
+</li>
+</ul>
+</li>
+<li>
+<p><code>font-weight</code> 字体粗细</p>
+<ul><li>
+<p>关键字</p>
+<ul><li>
+<code>normal</code>默认字体</li>
+<li>
+<code>lighter</code>较细</li>
+<li>
+<code>blod</code>较粗</li>
+<li>
+<code>bolder</code>很粗（经过测试和<code>blod</code>区别不大）</li>
+</ul>
+</li>
+<li>
+<p>也可以给值</p>
+<ul><li>
+<code>100-900</code> 只能为整数 值越大 字体越粗</li>
+<li>
+<code>400</code> 相当于正常的</li>
+<li>
+<code>700</code>相当于<code>blod</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><code>font-style</code>  字体斜体</p>
+<ul><li>
+<code>normal</code> 默认值</li>
+<li>
+<code>italic</code> 斜体， 这是一个属性</li>
+<li>
+<code>oblique</code> 将字体倾斜，就没有斜体变量（<code>italic</code>）变量的特殊字体，要应用<code>oblique</code></li>
+</ul>
+</li>
+<li>
+<p><code>color</code>  颜色</p>
+<ul><li>
+<p>可以使用颜色关键字</p>
+<ul><li>
+<code>skyblue</code>，<code>red</code>等等</li>
+</ul>
+</li>
+<li>
+<p>一个<code>16</code>进制的<code>RGB</code>值</p>
+<ul><li>
+<code>#ffffff</code>白色，<code>#000000</code>黑色</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3>为什么要把这两个分开讲</h3>
+<p>文字样式跟段落样式为啥要区分呢？文字样式主要涉及文字本身的型体效果，而段落样式主要涉及多个文字的排版效果，即整个段落的排版效果。文字样式注重个体，段落样式注重整体。所以<code>CSS</code>在命名时，特意使用了<code>font</code>前缀和<code>text</code>前缀来区分两类不同性质的属性</p>
+<h3><code>CSS</code>控制文本</h3>
+<ul><li>
+<p><code>text-decoration</code>  下划线、删除线、顶划线</p>
+<ul><li>
+<code>none</code>  默认值,可以用这个属性值去掉已经有下划线或删除线或顶划线的样式</li>
+<li>
+<code>ubderline</code> 下划线         一般用于文章的重点标明</li>
+<li>
+<code>line-through</code> 删除线    一般出现在商务网站用于促销</li>
+<li>
+<code>overline</code>  顶划线        几乎没怎么见过</li>
+</ul>
+<pre><code>
+text-decoration: underline skyblue double;
+/*text-decoration-style: double;
+text-decoration-color: skyblue;
+text-decoration-line: underline;*/
+</code></pre>
+</li>
+<li>
+<p><code>text-transform</code> 文本大小写</p>
+<ul><li>
+<code>none</code> 默认值 无转换发生</li>
+<li>
+<code>uppercase</code>  转换成大写</li>
+<li>
+<code>lowercase</code> 转换成小写</li>
+<li>
+<code>captitalize</code>将每个英文字母的首字母转换成大写。其余无转换发生</li>
+</ul>
+</li>
+<li>
+<p><code>font-varient</code>将英文文本转为<em>小型</em>大写字母</p>
+<ul><li>
+<code>normal</code> 默认值  正常效果</li>
+<li>
+<code>small-caps</code> 小型大写字母的字体</li>
+<li>
+在大天朝很少见</li>
+</ul>
+</li>
+<li>
+<p><code>text-indent</code>段落首行缩进</p>
+<ul><li>
+一般缩进是两个字的，值应该是<code>font-size</code>的两倍</li>
+</ul>
+</li>
+<li>
+<p><code>text-align</code> 文本水平对齐方式</p>
+<ul><li>
+<code>left</code>        默认值 ，左对齐</li>
+<li>
+<code>center</code>    居中对齐</li>
+<li>
+<code>right</code>       右对齐 </li>
+<li>
+只针对文本文字和<code>img</code>标签，对其他标签无效。记住那，<code>text-align</code>属性不仅对文本文字有效，对<code>img</code>标签也有效</li>
+</ul>
+</li>
+<li>
+<p><code>line-height</code> 行高</p>
+<ul><li>
+一行的高度</li>
+</ul>
+</li>
+<li>
+<p><code>letter-spacing</code>  字距</p>
+<ul><li>
+以字为单位  一般使用的浏览器默认的</li>
+</ul>
+</li>
+<li>
+<p><code>word-spacing</code>  词距</p>
+<ul><li>
+以词为单位</li>
+</ul>
+</li>
+</ul>
+<h3>边框</h3>
+<p><strong>一般设置边框需要</strong></p>
+<ul><li>
+<p><code>border-width</code>边框的宽度<br/></p>
+<ul><li>
+单位一般为<code>px</code></li>
+</ul>
+</li>
+<li>
+<p><code>border-style</code> 边框的外观 </p>
+<ul><li>
+<code>none</code>  无样式</li>
+<li>
+<code>hidden</code>  与<code>none</code>相同，<code>bug</code>应用表除外，对于表，<code>hidden</code>用于解决边框冲突</li>
+<li>
+<code>solid</code>   实线</li>
+<li>
+<code>dashed</code>  虚线</li>
+<li>
+<code>dotted</code> 点线</li>
+<li>
+<code>double</code>  双线，双线的宽度等于<code>border-width</code>的值</li>
+</ul>
+</li>
+<li>
+<p><code>border-style</code> 3d样式</p>
+<ul><li>
+<code>inset</code>  内凹</li>
+<li>
+<code>outset</code>  外凸</li>
+<li>
+<code>ridge</code>  脊线</li>
+<li>
+<code>groove</code>  槽线 <br/></li>
+<li>
+了解就好</li>
+</ul>
+</li>
+<li>
+<p><code>border-color</code>边框的颜色  如果没有设置， 默认黑色</p>
+<ul><li>
+等同与<code>color</code></li>
+</ul>
+</li>
+<li>
+<p>简洁写法</p>
+<ul><li>
+<code>border:1px solid skyblue</code></li>
+</ul>
+</li>
+<li>
+<p>定义单条边框</p>
+<ul><li>
+<pre><code class='language-html' lang='html'>
+/*border top*/
+border-top-width:1px;
+border-top-style: solid;
+border-color:skyblue;
+
+border-top:1px solid sktblue;
+</code></pre>
+</li>
+<li>
+<p>同上</p>
+</li>
+<li>
+<p>同上</p>
+</li>
+<li>
+<p>同上</p>
+</li>
+</ul>
+</li>
+<li>
+<p>彩色边框</p>
+<ul><li>
+<pre><code>
+border-top:1px solid skyblue;         /*上边框样式*/
+border-right:1px solid orange;    /*右边框样式*
+border-bottom:1px solid blue;     /*下边框样式*/
+border-left:1px solid green;      /*左边框样式*/
+</code></pre>
+</li>
+</ul>
+<pre><code>
+
+</code></pre>
+</li>
+<li>
+<p>去掉上边框</p>
+<ul><li>
+<pre><code>
+border:1px solid gray;     /*边框整体样式*/
+border-top:0px;          /*去除上边框*/
+
+border-top:none;      /*去除上边框*/
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<h3>背景</h3>
+<ul><li>
+<p><code>background-color</code>  背景色</p>
+<ul><li>
+给整个图片设置背景颜色</li>
+</ul>
+</li>
+<li>
+<p><code>background-image</code>  背景图片的路径</p>
+<ul><li>
+注意使用的<code>url</code> 不是<code>src</code>，图片地址可以是相对的，也可以是绝对的</li>
+<li>
+<code>background-image:url(&quot;image/bg.png&quot;)</code></li>
+<li>
+<strong>注意</strong>： 如果要给某个元素设置背景图像，那么元素要有一定的宽度和高度，背景图片才会显示出来</li>
+</ul>
+</li>
+<li>
+<p><code>background-repeat</code>   背景显示方式  是否平铺</p>
+<ul><li>
+<code>repeat</code>  默认值 在水平方向(<code>x</code>轴)和垂直方向(<code>y</code>轴)同时平铺</li>
+<li>
+<code>no-repeat</code>  表示不平铺</li>
+<li>
+<code>repeat-x</code>  水平方向<code>x</code>轴平铺</li>
+<li>
+<code>repeat-y</code> 垂直方向 <code>y</code>轴平铺</li>
+<li>
+<strong>注意</strong>：只有背景图片的宽高小于被设置的背景的元素的宽高，才会有平铺效果</li>
+</ul>
+</li>
+<li>
+<p><code>background-position</code>  背景定位在元素的那个位置</p>
+<ul><li>
+<p>也可以设置关键字，需要设置水平和垂直方向的值，两个值一样可以设置一个值</p>
+<ul><li>
+<code>top left</code>  左上</li>
+<li>
+<code>top center</code>靠上居中</li>
+<li>
+<code>top right</code> 右上</li>
+<li>
+<code>left center</code> 靠左居中</li>
+<li>
+<code>center center</code>正中<br/></li>
+<li>
+<code>right center</code> 靠右居中</li>
+<li>
+<code>bottom left</code>左下</li>
+<li>
+<code>bottom center</code>靠下居中</li>
+<li>
+<code>bottom right</code>右下</li>
+</ul>
+</li>
+<li>
+<p>当然，除了关键字，肯定也能用像素单位</p>
+<ul><li>
+<code>.wula{background:15px 25px}</code></li>
+<li>
+表示水平<code>15px</code>垂直<code>25px</code>两个值之间一定要空格</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><code>background-attachment</code> 背景是否随着内容而滚动</p>
+<ul><li>
+<p><code>scroll</code> 默认值 </p>
+<ul><li>
+表示随着对象滚动而滚动</li>
+</ul>
+</li>
+<li>
+<p><code>fixed</code>  固定</p>
+<ul><li>
+表示背景图像固定在页面不动,其它的内容随着滚动而滚动</li>
+</ul>
+</li>
+</ul>
+<p>,</p>
+</li>
+</ul>
+</body>
+</html>

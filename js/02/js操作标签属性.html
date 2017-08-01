@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="KeyWords" content="关键字，关键字">
+		<meta name="Description" content="网页描述">
+		<title></title>
+	</head>
+<body>
+	
+	<a href="http://www.tanzhoujiaoyu.com" id="link" class="aa" which="handsome" char="123" width="155" style="color:red;">aaa</a>
+    <font color="red" id="font">qwe</font>
+    <script>
+    	/*
+			js 操作标签属性
+				合法标签属性
+					对象.标签属性名
+					class == 》 className
+				自定义标签属性
+					对象.getAttribute('标签属性名')
+					对象.setAttribute('标签属性名', '属性值')
+					removeAttribute('属性名')
+
+			js对象的自定义属性
+    	*/
+        var oA = document.getElementById("link");
+    	var oFont = document.getElementById("font");
+    	 // alert(oA.href) 路径相关的，弹出来的是绝对路径
+    	 // alert(oA.className)  //class是JavaScript的保留字，所有class相关的就是classname
+    	 // alert(oA.id)
+
+    	 /*
+    	 var obj = {};
+    	 //alert(obj.w) // undefined
+    	 obj.w = 10;
+    	 //alert(obj.w) // 10
+    	 */
+    	//alert( oA.getAttribute('which') );
+    	 // alert(oA.which) //undefined
+    	//oA.setAttribute('slice', 'handsome'); // 增加自定义标签属性
+    	//oA.setAttribute('which ', '123');  //修改自定义标签属性
+    	//oA.removeAttribute("class"); //移除标签属性
+    	//alert( oA.getAttribute('which') );
+        alert(oFont.getAttribute("color"));
+
+    </script>
+</bo dy>
+</html>

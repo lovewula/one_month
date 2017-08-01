@@ -1,0 +1,1228 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>@font-face {
+  font-family: octicons-anchor;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 980px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+body .markdown-body {
+    padding: 45px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    word-wrap: break-word;
+}
+
+pre {
+    font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+.markdown-body {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  color: #333;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.markdown-body a {
+  background-color: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline: 0;
+}
+
+.markdown-body strong {
+  font-weight: bold;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
+  border: 0;
+}
+
+.markdown-body hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+.markdown-body pre {
+  overflow: auto;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.markdown-body input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body html input[disabled] {
+  cursor: default;
+}
+
+.markdown-body input {
+  line-height: normal;
+}
+
+.markdown-body input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body input {
+  font: 13px / 1.4 Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.markdown-body a {
+  color: #4078c0;
+  text-decoration: none;
+}
+
+.markdown-body a:hover,
+.markdown-body a:active {
+  text-decoration: underline;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.markdown-body hr:before {
+  display: table;
+  content: "";
+}
+
+.markdown-body hr:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.markdown-body h1 {
+  font-size: 30px;
+}
+
+.markdown-body h2 {
+  font-size: 21px;
+}
+
+.markdown-body h3 {
+  font-size: 16px;
+}
+
+.markdown-body h4 {
+  font-size: 14px;
+}
+
+.markdown-body h5 {
+  font-size: 12px;
+}
+
+.markdown-body h6 {
+  font-size: 11px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+  font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+.markdown-body .select::-ms-expand {
+  opacity: 0;
+}
+
+.markdown-body .octicon {
+  font: normal normal normal 16px/1 octicons-anchor;
+  display: inline-block;
+  text-decoration: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.markdown-body .octicon-link:before {
+  content: '\f05c';
+}
+
+.markdown-body:before {
+  display: table;
+  content: "";
+}
+
+.markdown-body:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.markdown-body .anchor {
+  display: inline-block;
+  padding-right: 2px;
+  margin-left: -18px;
+}
+
+.markdown-body .anchor:focus {
+  outline: none;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  color: #000;
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  visibility: visible;
+}
+
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h1 .anchor {
+  line-height: 1;
+}
+
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h2 .anchor {
+  line-height: 1;
+}
+
+.markdown-body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+.markdown-body h3 .anchor {
+  line-height: 1.2;
+}
+
+.markdown-body h4 {
+  font-size: 1.25em;
+}
+
+.markdown-body h4 .anchor {
+  line-height: 1.2;
+}
+
+.markdown-body h5 {
+  font-size: 1em;
+}
+
+.markdown-body h5 .anchor {
+  line-height: 1.1;
+}
+
+.markdown-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+.markdown-body h6 .anchor {
+  line-height: 1.1;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+
+.markdown-body table th {
+  font-weight: bold;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  box-sizing: content-box;
+  background-color: #fff;
+}
+
+.markdown-body code {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+
+.markdown-body code:before,
+.markdown-body code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .highlight {
+  margin-bottom: 16px;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body pre code:before,
+.markdown-body pre code:after {
+  content: normal;
+}
+
+.markdown-body kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font-size: 11px;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb;
+}
+
+.markdown-body .pl-c {
+  color: #969896;
+}
+
+.markdown-body .pl-c1,
+.markdown-body .pl-s .pl-v {
+  color: #0086b3;
+}
+
+.markdown-body .pl-e,
+.markdown-body .pl-en {
+  color: #795da3;
+}
+
+.markdown-body .pl-s .pl-s1,
+.markdown-body .pl-smi {
+  color: #333;
+}
+
+.markdown-body .pl-ent {
+  color: #63a35c;
+}
+
+.markdown-body .pl-k {
+  color: #a71d5d;
+}
+
+.markdown-body .pl-pds,
+.markdown-body .pl-s,
+.markdown-body .pl-s .pl-pse .pl-s1,
+.markdown-body .pl-sr,
+.markdown-body .pl-sr .pl-cce,
+.markdown-body .pl-sr .pl-sra,
+.markdown-body .pl-sr .pl-sre {
+  color: #183691;
+}
+
+.markdown-body .pl-v {
+  color: #ed6a43;
+}
+
+.markdown-body .pl-id {
+  color: #b52a1d;
+}
+
+.markdown-body .pl-ii {
+  background-color: #b52a1d;
+  color: #f8f8f8;
+}
+
+.markdown-body .pl-sr .pl-cce {
+  color: #63a35c;
+  font-weight: bold;
+}
+
+.markdown-body .pl-ml {
+  color: #693a17;
+}
+
+.markdown-body .pl-mh,
+.markdown-body .pl-mh .pl-en,
+.markdown-body .pl-ms {
+  color: #1d3e81;
+  font-weight: bold;
+}
+
+.markdown-body .pl-mq {
+  color: #008080;
+}
+
+.markdown-body .pl-mi {
+  color: #333;
+  font-style: italic;
+}
+
+.markdown-body .pl-mb {
+  color: #333;
+  font-weight: bold;
+}
+
+.markdown-body .pl-md {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.markdown-body .pl-mi1 {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.markdown-body .pl-mdr {
+  color: #795da3;
+  font-weight: bold;
+}
+
+.markdown-body .pl-mo {
+  color: #1d3e81;
+}
+
+.markdown-body kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb;
+}
+
+.markdown-body .plan-price-unit {
+  color: #767676;
+  font-weight: normal;
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 0.35em 0.25em -1.6em;
+  vertical-align: middle;
+}
+
+.markdown-body .plan-choice {
+  padding: 15px;
+  padding-left: 40px;
+  display: block;
+  border: 1px solid #e0e0e0;
+  position: relative;
+  font-weight: normal;
+  background-color: #fafafa;
+}
+
+.markdown-body .plan-choice.open {
+  background-color: #fff;
+}
+
+.markdown-body .plan-choice.open .plan-choice-seat-breakdown {
+  display: block;
+}
+
+.markdown-body .plan-choice-free {
+  border-radius: 3px 3px 0 0;
+}
+
+.markdown-body .plan-choice-paid {
+  border-radius: 0 0 3px 3px;
+  border-top: 0;
+  margin-bottom: 20px;
+}
+
+.markdown-body .plan-choice-radio {
+  position: absolute;
+  left: 15px;
+  top: 18px;
+}
+
+.markdown-body .plan-choice-exp {
+  color: #999;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.markdown-body .plan-choice-seat-breakdown {
+  margin-top: 10px;
+  display: none;
+}
+
+.markdown-body :checked+.radio-label {
+  z-index: 1;
+  position: relative;
+  border-color: #4078c0;
+}
+</style><title>04</title></head><body><article class="markdown-body"><h1>
+<a id="user-content-css第一节课" class="anchor" href="#css%E7%AC%AC%E4%B8%80%E8%8A%82%E8%AF%BE" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>CSS第一节课</h1>
+<h2>
+<a id="user-content-css是什么" class="anchor" href="#css%E6%98%AF%E4%BB%80%E4%B9%88" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>CSS</code>是什么</h2>
+<ul>
+<li>
+<code>css</code>全称<strong>层叠样式表</strong>(<code>Cascading Style Sheet</code>)</li>
+</ul>
+<h2>
+<a id="user-content-css能干啥" class="anchor" href="#css%E8%83%BD%E5%B9%B2%E5%95%A5" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>CSS</code>能干啥</h2>
+<ul>
+<li>
+<code>CSS</code>主要可以控制页面的外观</li>
+</ul>
+<h2>
+<a id="user-content-css怎么学" class="anchor" href="#css%E6%80%8E%E4%B9%88%E5%AD%A6" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>CSS</code>怎么学</h2>
+<ul>
+<li>多敲多练多思考</li>
+</ul>
+<h2>
+<a id="user-content-css怎么用" class="anchor" href="#css%E6%80%8E%E4%B9%88%E7%94%A8" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>CSS</code>怎么用</h2>
+<h3>
+<a id="user-content-css的引入方式" class="anchor" href="#css%E7%9A%84%E5%BC%95%E5%85%A5%E6%96%B9%E5%BC%8F" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>CSS</code>的引入方式</h3>
+<ul>
+<li>
+<p>内联样式（直接写在标签里面）</p>
+<ul>
+<li>
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">div</span> <span class="pl-e">style</span>=<span class="pl-s"><span class="pl-pds">"</span>width:100px;height:100px;background:skyblue;<span class="pl-pds">"</span></span>&gt;
+ 	我是一个div标签
+&lt;/<span class="pl-ent">div</span>&gt;</pre></div>
+</li>
+<li>
+<p>缺点：造成代码大量冗余 不利于后期维护</p>
+</li>
+<li>
+<p>行内的元素的优先级是最高的</p>
+</li>
+</ul>
+</li>
+<li>
+<p>内部样式</p>
+<ul>
+<li>
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">style</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/css<span class="pl-pds">"</span></span>&gt;<span class="pl-s1"></span>
+<span class="pl-s1">  </span>
+<span class="pl-s1"></span><span class="pl-s1">&lt;</span>/<span class="pl-ent">style</span>&gt;</pre></div>
+</li>
+</ul>
+</li>
+<li>
+<p>外部样式</p>
+<ul>
+<li>定义一个css文件,存放所有的<code>css</code>文件</li>
+<li>在需要的时候通过<code>link</code>引入正确的<code>css</code>文件</li>
+</ul>
+</li>
+</ul>
+<h3>
+<a id="user-content-css选择器" class="anchor" href="#css%E9%80%89%E6%8B%A9%E5%99%A8" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>CSS</code>选择器</h3>
+<ul>
+<li>元素选择器
+<ul>
+<li>选中相同的元素，对相同的元素设置同一种<code>css</code>样式</li>
+<li><code>div{width:50px;height:50px;background:red;}</code></li>
+<li>这样会选中页面中所有的<code>div</code>元素</li>
+</ul>
+</li>
+<li>
+<code>class</code>选择器
+<ul>
+<li>给标签设置一个<code>class</code>属性，前面一个<code>.</code>
+</li>
+<li><code>.wula{width:50px;height:50px;background:red;}</code></li>
+<li>一般是给具有相同的元素设置同一个<code>class</code>
+</li>
+</ul>
+</li>
+<li>
+<code>id</code>选择器
+<ul>
+<li>给标签设置一个<code>id</code>,前面一定要加上一个<code>#</code>号</li>
+<li><code>#wula{width:50px;height:50px;background:red;}</code></li>
+<li>
+<code>id</code>具有唯一性，一个页面只能出现一次</li>
+</ul>
+</li>
+<li>群组选择器
+<ul>
+<li>对几个相同的选择器进行操作时，一个一个分开写显得代码冗余</li>
+<li><code>p,span,div{width: 150px;height: 150px;background: skyblue;}</code></li>
+<li><code>.box,.wrap,.box1{width: 150px;height: 150px;background: skyblue;}</code></li>
+<li>两个选择器之间必须用<code>,</code>逗号分开</li>
+</ul>
+</li>
+<li>相邻选择器
+<ul>
+<li>相邻选择器操作的对象的该元素的同级元素</li>
+<li><code>div+p{font-size:18px;}</code></li>
+<li>选择<code>div</code>相邻的下一个兄弟元素<code>p</code>
+</li>
+</ul>
+</li>
+<li>子代选择器
+<ul>
+<li>选择某个元素下面的子元素</li>
+<li><code>div &gt; p{font-size:18px;}</code></li>
+</ul>
+</li>
+<li>后代选择器
+<ul>
+<li>选中某元素的后代</li>
+<li><code>div p{font-size:18px;}</code></li>
+<li>必须用空格隔开</li>
+</ul>
+</li>
+</ul>
+<h3>
+<a id="user-content-css文字属性" class="anchor" href="#css%E6%96%87%E5%AD%97%E5%B1%9E%E6%80%A7" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>CSS</code>文字属性</h3>
+<ul>
+<li>
+<p><code>font-family</code> 字体类型</p>
+<ul>
+<li>我们在定义的时候要注意，要是用户电脑上没这个字体的时候怎么办</li>
+<li><code>.box{font-family:"Microsoft yahei","楷体"}</code></li>
+<li>默认情况下，浏览器的字体是微软雅黑。中文字体常用的有宋体、微软雅黑，英文字体比较常用的是<code>Times New Roman</code>、<code>Arial</code>
+</li>
+</ul>
+</li>
+<li>
+<p><code>font-size</code> 字体大小</p>
+<ul>
+<li>
+<p>可以采用关键字为单位</p>
+<ul>
+<li>
+<code>xx-small</code>        最小 <code>10px</code>
+</li>
+<li>
+<code>x-small</code>          较小 <code>12px</code>
+</li>
+<li>
+<code>small</code>              小   <code>13px</code>
+</li>
+<li>
+<code>medium</code>            正常   <code>16px</code>
+</li>
+<li>
+<code>large</code>              大    <code>18px</code>
+</li>
+<li>
+<code>x-large</code>          较大  <code>24px</code>
+</li>
+<li>
+<code>xx-large</code>        最大   <code>32px</code>
+</li>
+<li>这些都是相对浏览器默认情况下而言。对于这些属性值，我们完全不需要记忆，在实际开发中，很少使用这种方式来表达字体的大小</li>
+</ul>
+</li>
+<li>
+<p>采用像素(<code>px</code>)为单位</p>
+<ul>
+<li>
+<p><code>px</code>（<code>pixel</code>）就是像素，<code>px</code>就是一张图片中最小的点，或者是计算机屏幕最小的点</p>
+<p>一台计算机的分辨率是<code>1024px×768px</code>指的就是“计算机宽是1024个小方点，高是768个小方点”</p>
+</li>
+</ul>
+</li>
+<li>
+<p>除了像素以外，还有<code>em、rem、百分比等等</code></p>
+</li>
+</ul>
+</li>
+<li>
+<p><code>font-weight</code> 字体粗细</p>
+<ul>
+<li>关键字
+<ul>
+<li>
+<code>normal</code>默认字体</li>
+<li>
+<code>lighter</code>较细</li>
+<li>
+<code>blod</code>较粗</li>
+<li>
+<code>bolder</code>很粗（经过测试和<code>blod</code>区别不大）</li>
+</ul>
+</li>
+<li>也可以给值
+<ul>
+<li>
+<code>100-900</code> 只能为整数 值越大 字体越粗</li>
+<li>
+<code>400</code> 相当于正常的</li>
+<li>
+<code>700</code>相当于<code>blod</code>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><code>font-style</code>  字体斜体</p>
+<ul>
+<li>
+<code>normal</code> 默认值</li>
+<li>
+<code>italic</code> 斜体， 这是一个属性</li>
+<li>
+<code>oblique</code> 将字体倾斜，就没有斜体变量（<code>italic</code>）变量的特殊字体，要应用<code>oblique</code>
+</li>
+</ul>
+</li>
+<li>
+<p><code>color</code>  颜色</p>
+<ul>
+<li>可以使用颜色关键字
+<ul>
+<li>
+<code>skyblue</code>，<code>red</code>等等</li>
+</ul>
+</li>
+<li>一个<code>16</code>进制的<code>RGB</code>值
+<ul>
+<li>
+<code>#ffffff</code>白色，<code>#000000</code>黑色</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3>
+<a id="user-content-为什么要把这两个分开讲" class="anchor" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E6%8A%8A%E8%BF%99%E4%B8%A4%E4%B8%AA%E5%88%86%E5%BC%80%E8%AE%B2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>为什么要把这两个分开讲</h3>
+<p>文字样式跟段落样式为啥要区分呢？文字样式主要涉及文字本身的型体效果，而段落样式主要涉及多个文字的排版效果，即整个段落的排版效果。文字样式注重个体，段落样式注重整体。所以<code>CSS</code>在命名时，特意使用了<code>font</code>前缀和<code>text</code>前缀来区分两类不同性质的属性</p>
+<h3>
+<a id="user-content-css控制文本" class="anchor" href="#css%E6%8E%A7%E5%88%B6%E6%96%87%E6%9C%AC" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>CSS</code>控制文本</h3>
+<ul>
+<li>
+<p><code>text-decoration</code>  下划线、删除线、顶划线</p>
+<ul>
+<li>
+<code>none</code>  默认值,可以用这个属性值去掉已经有下划线或删除线或顶划线的样式</li>
+<li>
+<code>ubderline</code> 下划线         一般用于文章的重点标明</li>
+<li>
+<code>line-through</code> 删除线    一般出现在商务网站用于促销</li>
+<li>
+<code>overline</code>  顶划线        几乎没怎么见过</li>
+</ul>
+<pre><code>text-decoration: underline skyblue double;
+/*text-decoration-style: double;
+text-decoration-color: skyblue;
+text-decoration-line: underline;*/
+</code></pre>
+</li>
+<li>
+<p><code>text-transform</code> 文本大小写</p>
+<ul>
+<li>
+<code>none</code> 默认值 无转换发生</li>
+<li>
+<code>uppercase</code>  转换成大写</li>
+<li>
+<code>lowercase</code> 转换成小写</li>
+<li>
+<code>captitalize</code>将每个英文字母的首字母转换成大写。其余无转换发生</li>
+</ul>
+</li>
+<li>
+<p><code>font-varient</code>将英文文本转为_小型_大写字母</p>
+<ul>
+<li>
+<code>normal</code> 默认值  正常效果</li>
+<li>
+<code>small-caps</code> 小型大写字母的字体</li>
+<li>在大天朝很少见</li>
+</ul>
+</li>
+<li>
+<p><code>text-indent</code>段落首行缩进</p>
+<ul>
+<li>一般缩进是两个字的，值应该是<code>font-size</code>的两倍</li>
+</ul>
+</li>
+<li>
+<p><code>text-align</code> 文本水平对齐方式</p>
+<ul>
+<li>
+<code>left</code>        默认值 ，左对齐</li>
+<li>
+<code>center</code>    居中对齐</li>
+<li>
+<code>right</code>       右对齐</li>
+<li>只针对文本文字和<code>img</code>标签，对其他标签无效。记住那，<code>text-align</code>属性不仅对文本文字有效，对<code>img</code>标签也有效</li>
+</ul>
+</li>
+<li>
+<p><code>line-height</code> 行高</p>
+<ul>
+<li>一行的高度</li>
+</ul>
+</li>
+<li>
+<p><code>letter-spacing</code>  字距</p>
+<ul>
+<li>以字为单位  一般使用的浏览器默认的</li>
+</ul>
+</li>
+<li>
+<p><code>word-spacing</code>  词距</p>
+<ul>
+<li>以词为单位</li>
+</ul>
+</li>
+</ul>
+<h3>
+<a id="user-content-边框" class="anchor" href="#%E8%BE%B9%E6%A1%86" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>边框</h3>
+<p><strong>一般设置边框需要</strong></p>
+<ul>
+<li>
+<p><code>border-width</code>边框的宽度</p>
+<ul>
+<li>单位一般为<code>px</code>
+</li>
+</ul>
+</li>
+<li>
+<p><code>border-style</code> 边框的外观</p>
+<ul>
+<li>
+<code>none</code>  无样式</li>
+<li>
+<code>hidden</code>  与<code>none</code>相同，<code>bug</code>应用表除外，对于表，<code>hidden</code>用于解决边框冲突</li>
+<li>
+<code>solid</code>   实线</li>
+<li>
+<code>dashed</code>  虚线</li>
+<li>
+<code>dotted</code> 点线</li>
+<li>
+<code>double</code>  双线，双线的宽度等于<code>border-width</code>的值</li>
+</ul>
+</li>
+<li>
+<p><code>border-style</code> 3d样式</p>
+<ul>
+<li>
+<code>inset</code>  内凹</li>
+<li>
+<code>outset</code>  外凸</li>
+<li>
+<code>ridge</code>  脊线</li>
+<li>
+<code>groove</code>  槽线</li>
+<li>了解就好</li>
+</ul>
+</li>
+<li>
+<p><code>border-color</code>边框的颜色  如果没有设置， 默认黑色</p>
+<ul>
+<li>等同与<code>color</code>
+</li>
+</ul>
+</li>
+<li>
+<p>简洁写法</p>
+<ul>
+<li><code>border:1px solid skyblue</code></li>
+</ul>
+</li>
+<li>
+<p>定义单条边框</p>
+<ul>
+<li>
+<div class="highlight highlight-text-html-basic"><pre>/*border top*/
+border-top-width:1px;
+border-top-style: solid;
+border-color:skyblue;
+
+border-top:1px solid sktblue;</pre></div>
+</li>
+<li>
+<p>同上</p>
+</li>
+<li>
+<p>同上</p>
+</li>
+<li>
+<p>同上</p>
+</li>
+</ul>
+</li>
+<li>
+<p>彩色边框</p>
+<ul>
+<li>
+<pre><code> border-top:1px solid skyblue;         /*上边框样式*/
+ border-right:1px solid orange;    /*右边框样式*
+ border-bottom:1px solid blue;     /*下边框样式*/
+ border-left:1px solid green;      /*左边框样式*/
+</code></pre>
+<pre><code>
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p>去掉上边框</p>
+<ul>
+<li>
+<pre><code>  border:1px solid gray;     /*边框整体样式*/
+  border-top:0px;          /*去除上边框*/
+
+  border-top:none;      /*去除上边框*/
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<h3>
+<a id="user-content-背景" class="anchor" href="#%E8%83%8C%E6%99%AF" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>背景</h3>
+<ul>
+<li>
+<p><code>background-color</code>  背景色</p>
+<ul>
+<li>给整个图片设置背景颜色</li>
+</ul>
+</li>
+<li>
+<p><code>background-image</code>  背景图片的路径</p>
+<ul>
+<li>注意使用的<code>url</code> 不是<code>src</code>，图片地址可以是相对的，也可以是绝对的</li>
+<li><code>background-image:url("image/bg.png")</code></li>
+<li>
+<strong>注意</strong>： 如果要给某个元素设置背景图像，那么元素要有一定的宽度和高度，背景图片才会显示出来</li>
+</ul>
+</li>
+<li>
+<p><code>background-repeat</code>   背景显示方式  是否平铺</p>
+<ul>
+<li>
+<code>repeat</code>  默认值 在水平方向(<code>x</code>轴)和垂直方向(<code>y</code>轴)同时平铺</li>
+<li>
+<code>no-repeat</code>  表示不平铺</li>
+<li>
+<code>repeat-x</code>  水平方向<code>x</code>轴平铺</li>
+<li>
+<code>repeat-y</code> 垂直方向 <code>y</code>轴平铺</li>
+<li>
+<strong>注意</strong>：只有背景图片的宽高小于被设置的背景的元素的宽高，才会有平铺效果</li>
+</ul>
+</li>
+<li>
+<p><code>background-position</code>  背景定位在元素的那个位置</p>
+<ul>
+<li>也可以设置关键字，需要设置水平和垂直方向的值，两个值一样可以设置一个值
+<ul>
+<li>
+<code>top left</code>  左上</li>
+<li>
+<code>top center</code>靠上居中</li>
+<li>
+<code>top right</code> 右上</li>
+<li>
+<code>left center</code> 靠左居中</li>
+<li>
+<code>center center</code>正中</li>
+<li>
+<code>right center</code> 靠右居中</li>
+<li>
+<code>bottom left</code>左下</li>
+<li>
+<code>bottom center</code>靠下居中</li>
+<li>
+<code>bottom right</code>右下</li>
+</ul>
+</li>
+<li>当然，除了关键字，肯定也能用像素单位
+<ul>
+<li><code>.wula{background:15px 25px}</code></li>
+<li>表示水平<code>15px</code>垂直<code>25px</code>两个值之间一定要空格</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><code>background-attachment</code> 背景是否随着内容而滚动</p>
+<ul>
+<li>
+<code>scroll</code> 默认值
+<ul>
+<li>表示随着对象滚动而滚动</li>
+</ul>
+</li>
+<li>
+<code>fixed</code>  固定
+<ul>
+<li>表示背景图像固定在页面不动,其它的内容随着滚动而滚动</li>
+</ul>
+</li>
+</ul>
+<p>​</p>
+</li>
+</ul>
+</article></body></html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>HTML模板 - which</title>
+		<meta name="description" content="描述内容">
+		<meta name="keywords" content="关键词，关键字">
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			#child{
+				width: 100px;
+				height: 100px;
+				background: skyblue;
+			}
+			#parent{
+				padding: 100px;
+				background: orange;
+			}
+		</style>
+	</head>
+<body>
+
+   <!--  <div id="parent">
+    	<div id="child"></div>
+    </div> -->
+		<input type="text" placeholder="请输入用户名" clas="txt" >
+		<input type="text" placeholder="请输入密码" clas="txt">
+
+    <script>
+    	// var oBox = document.getElementById('parent');
+    	// oBox.onmousemove = function(){
+    	// 	console.log(1)
+    	// }
+    	var aTxt = document.getElementsByClassName('txt');  
+		aTxt[0].onfocus = function(){
+			alert('恭喜你，触发了第1个元素的的焦点);
+		}
+		aTxt[0].onblur = function(){
+			alert('很遗憾，你离开了第1个元素的的焦点);
+		}
+    	
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="KeyWords" content="关键字，关键字">
+		<meta name="Description" content="网页描述">
+		<title>关于[]的使用</title>
+		<style type="text/css">
+			#box{
+				width: 150px;
+				height: 150px;
+				background: red;
+			}
+		</style>
+	</head>
+<body>
+    
+	<div id="box"></div>
+
+	<script>
+		/*
+			[]
+			关于json  遍历json的时候用的到
+			需要用变量代替某些属性的时候就要去改。
+			属性是变量的时候，不能直接去 点上一个变量
+			
+		*/
+		/*数组中可以放任意的数据类型*/
+
+		// var arry = [1, 2, 'which']
+		// arry[0]
+
+		var oBox = document.getElementById("box");
+
+		var x = 'height';
+		/*绝大部分的点都可以用[]来改*/
+		document.onclick = function(){
+			oBox['style']['width'] = '300px';
+			//oBox.style.x = '300px' //不能这么做，这么做修改的是style="x:300"
+			oBox.style[x] = '300px';
+		}
+	</script>
+
+</body>
+</html>

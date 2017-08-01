@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+	<head>
+		<!--声明当前页面的编码集：charset=gbk,gb2312(中文编码),utf-8国际编码-->
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	    <!--声明当前页面三要素-->
+		<meta name="Generator" content="Editplus">
+		<meta name="Author" content="">
+		<meta name="Keywords" content="关键词,关键字,关键词">
+		<meta name="Description" content="描述信息">
+		<title>HTML国际化标准模板 —— Char制作</title>
+		<!--js,css-->
+		<style type="text/css">
+			*{margin:0;padding:0;list-style: none;}
+			.show{
+				width: 200px;
+				height: 35px;
+				line-height: 35px;
+				background: #333;
+				text-align: center;
+				cursor: pointer;
+				color: #fff;
+			}
+			.hide{
+				position: absolute;
+				top: 0;
+				left: 200px;
+				display: none;
+			}
+			.hide ul li a{
+				display: block;
+				height: 35px;
+				width: 180px;
+				line-height: 35px;
+				color: #000;
+				background: #ccc;
+				text-align: center;
+				text-decoration:none;
+			}
+			.hide ul li a:hover{
+				color: #c00;
+			}
+		</style>
+   </head>
+<body>
+	
+	<ul>
+		<li class="show">软件
+			<div class="hide">
+				<ul>
+					<li><a href="javascript">python</a></li>
+					<li><a href="javascript">web</a></li>
+					<li><a href="javascript">C++</a></li>
+					<li><a href="javascript">java</a></li>
+					<li><a href="javascript">大数据</a></li>
+					<li><a href="javascript">1111</a></li>
+					<li><a href="javascript">1111</a></li>
+					<li><a href="javascript">1111</a></li>
+				</ul>
+			</div>
+		</li>
+		<li class="show">音乐
+			<div class="hide">
+				<ul>
+					<li><a href="javascript">22222</a></li>
+					<li><a href="javascript">22222</a></li>
+					<li><a href="javascript">22222</a></li>
+					<li><a href="javascript">22222</a></li>
+					<li><a href="javascript">22222</a></li>
+					<li><a href="javascript">22222</a></li>
+					<li><a href="javascript">22222</a></li>
+					<li><a href="javascript">22222</a></li>
+				</ul>
+			</div>
+		</li>
+		<li class="show">工业
+			<div class="hide">
+				<ul>
+					<li><a href="javascript">33333</a></li>
+					<li><a href="javascript">33333</a></li>
+					<li><a href="javascript">33333</a></li>
+					<li><a href="javascript">33333</a></li>
+					<li><a href="javascript">33333</a></li>
+					<li><a href="javascript">33333</a></li>
+					<li><a href="javascript">33333</a></li>
+					<li><a href="javascript">33333</a></li>
+				</ul>
+			</div>
+		</li>
+		<li class="show">语言	
+			<div class="hide">
+				<ul>
+					<li><a href="javascript">444444</a></li>
+					<li><a href="javascript">444444</a></li>
+					<li><a href="javascript">444444</a></li>
+					<li><a href="javascript">444444</a></li>
+					<li><a href="javascript">444444</a></li>
+					<li><a href="javascript">444444</a></li>
+					<li><a href="javascript">444444</a></li>
+					<li><a href="javascript">444444</a></li>
+				</ul>
+			</div>
+		</li>
+	</ul>
+	
+	<script>
+		var aS = document.getElementsByClassName('show');
+		for(var i=0;i<aS.length;i++){
+			aS[i].onmouseenter = function(){
+				var oH = this.getElementsByClassName('hide')[0]
+				oH.style.display = 'block';
+			}
+			aS[i].onmouseleave = function(){
+				var oH = this.getElementsByClassName('hide')[0]
+				oH.style.display = 'none';
+			}
+		}
+	</script>
+
+
+</body>
+
+</html>
+
+

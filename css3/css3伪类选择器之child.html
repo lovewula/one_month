@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>HTML模板 - which</title>
+		<meta name="description" content="描述内容">
+		<meta name="keywords" content="关键词，关键字">
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}	
+			.box p:nth-child(odd){
+				color: skyblue;	
+				font-size: 14px;	
+			}
+			.box p:nth-child(even){
+				color: blue;	
+				font-size: 10px;	
+			}
+			.box p:nth-child(2){
+				color: red;	
+				font-size: 16px;	
+			}
+			.box p:first-child{
+				font-size: 20px;
+			}
+			.box p:last-child{
+				font-size: 20px;
+			}
+			.wula div:only-child{
+				font-size: 100px;
+			}
+		</style>
+	</head>
+<body>
+    <!--
+		nth-child()  可以填写数字 除了数字以外可以写 odd(奇数) even(偶数)
+		first-child  选中父元素下的第一个子元素
+		last-child   选中父元素下的最后一个子元素
+		only-child   选中父元素的唯一子元素，就是说该父元素只有一个子元素
+
+		想要实现同样的效果，很多人想到在li元素加上id或class属性来实现。但是这样会使得HTML结构id和class泛滥，不便于维护。使用结构伪类选择器，使得我们HTML结构非常清晰，结构与样式分离，便于维护，也更利于SEO。
+
+		上面这种使用结构伪类选择器的地方非常多，特别适合操作列表中列表项的不同样式
+     -->
+     <div class="wula">
+     	<div>乌拉</div>
+     </div>
+	<div class="box">
+		<p>1乌拉</p>
+		<p>2乌拉</p>
+		<p>3乌拉</p>
+		<p>4乌拉</p>
+		<p>5乌拉</p>
+		<p>6乌拉</p>
+		<p>7乌拉</p>
+		<p>8乌拉</p>
+		<p>9乌拉</p>
+		<p>10乌拉</p>
+		<p>11乌拉</p>
+		<p>12乌拉</p>
+		<p>13乌拉</p>
+		<p>14乌拉</p>
+		<p>15乌拉</p>
+	</div>
+
+    <script>
+    	
+    </script>
+    
+</body>
+</html>

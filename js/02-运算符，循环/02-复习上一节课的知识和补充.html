@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>HTML模板 - which</title>
+		<meta name="description" content="描述内容">
+		<meta name="keywords" content="关键词，关键字">
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			#parent{
+				width: 500px;
+				height: 500px;
+				border: 2px solid red;
+			}
+			#child{
+				width: 100px;
+				height: 100px;
+				background: skyblue;
+			}
+		</style>
+	</head>
+<body>
+	<div id="parent">
+		<div id="child" ></div>
+	</div>
+
+    <script>
+
+    	var oChild = document.getElementById('child');
+    	oChild.onclick = function(){
+    		alert( this.style.width )
+    	}
+
+    	/*
+			通过id
+			通过class
+			通过tag 
+
+    	*/
+
+
+    	/*
+			复习下6大数据类型
+    	*/
+
+
+    	/*
+			style修改样式注意
+			1.style 只能修改样式，不能获取样式，行内样式是可以的
+			2.复合样式要使用驼峰法则
+			3.
+    	*/
+
+
+    </script>
+</body>
+</html>

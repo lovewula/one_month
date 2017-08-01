@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>HTML模板 - which</title>
+		<meta name="description" content="描述内容">
+		<meta name="keywords" content="关键词，关键字">
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			
+			html,body{
+				height: 100%;
+			}
+
+			#box{
+				width: 300px;
+				height: 300px;
+				/* background: skyblue;
+				margin: auto;
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0; */
+
+				background: blue;
+				margin: auto;
+				position: relative;
+				top: 50%;
+				margin-top: -150px;
+				
+				/*background: orange;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				margin-top: -150px;
+				margin-left: -150px;*/
+			}
+		</style>
+	</head>
+<body>
+	<!--
+		让盒子水平垂直居中
+
+		1. position:relative;top:50%;margin-top:-1/2盒子高度;margin:auto;
+
+		2. position:absolute;top:50%;margin-top:-1/2盒子高度;left:50%;margin-left:-1/2盒子宽度;
+		
+		3. position:absolute;top:0;left:0;right:0;bottom:0;margin:auto;
+
+
+	-->
+   	<div id="box"></div>   
+</body>
+</html>

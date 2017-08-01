@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>HTML模板 - which</title>
+		<meta name="description" content="描述内容">
+		<meta name="keywords" content="关键词，关键字">
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.wula{
+				width: 150px;
+				height: 30px;
+			}
+			.wula:focus{
+				background: skyblue;
+				border: none;
+
+			}
+			input:nth-of-type(2):read-only{
+				background: red;
+				color: #fff;
+			}
+		</style>
+	</head>
+<body>
+    
+    <!--
+		这些选择器的共同特征是：指定的样式只有当元素处于某种状态下时才起作用，在默认状态下不起作用。UI元素状态伪类选择器大多数都是针对表单元素来使用的
+    -->
+
+
+    <input type="text" name="username" class="wula">
+    <input type="text" readonly="readonly" value="乌拉">
+    <script>
+    	
+    </script>
+    
+</body>
+</html>

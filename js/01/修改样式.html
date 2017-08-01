@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="KeyWords" content="关键字，关键字">
+		<meta name="Description" content="网页描述">
+		<title>javaScript修改样式</title>
+		<style type="text/css" id="css">
+			
+			#box{
+				width: 100px;
+				height: 100px;
+				background:red;
+			}
+		</style>
+	</head>
+<body>
+    <div id="box"></div>
+    <script>
+    	var oBox = document.getElementById('box');
+    	var oStyle = document.getElementById("css");
+
+    	oBox.onclick = function(){
+    		//oStyle.innerHTML += "#box{background:blue;}"
+    		/*
+    		this.style.background = 'skyblue';
+    		this.style.width = '200px';
+    		this.style.height = '200px';
+			*/
+			this.style.cssText = 'background:blue;width:50px;height:50px;'
+
+
+    	}
+
+    </script>
+</body>
+</html>

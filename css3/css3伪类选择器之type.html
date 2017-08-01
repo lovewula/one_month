@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>HTML模板 - which</title>
+		<meta name="description" content="描述内容">
+		<meta name="keywords" content="关键词，关键字">
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			
+			.wula p:nth-of-type(10){
+				font-size: 100px;
+			}
+			.wula p:nth-of-type(odd){
+				font-size: 100px;
+			}
+			.wula p:nth-child(10){
+				font-size: 100px;
+			}
+			.wula p:first-of-type{
+				color: skyblue;
+			}
+			.wula span:last-of-type{
+				font-size: 20px;
+			}
+			.wula div:only-of-type{
+				color: red;
+			}
+
+		</style>
+	</head>
+<body>
+	<!--
+		nth-of-type 选择同类型的第n个兄弟元素
+		first-of-type 选择同类型的第一个兄弟元素
+		last-of-type 选择同类型的最后一个兄弟元素
+		only-of-type 选择特定同类型的唯一元素
+			
+	-->
+   
+   	<div class="wula">
+   		<p>1p乌拉</p>
+   		<span>1spanwhich</span>
+   		<span>2spanwhich</span>
+   		<div>我认识乌拉一个月了</div>
+   		<p>2p乌拉</p>
+   		<p>3p乌拉</p>
+   		<p>4p乌拉</p>
+   		<p>5p乌拉</p>
+   		<p>6p乌拉</p>
+   		<p>7p乌拉</p>
+   		<p>8p乌拉</p>
+   		<p>9p乌拉</p>
+   		<p>10p乌拉</p>
+   	</div>
+
+    <script>
+    	
+    </script>
+    
+</body>
+</html>

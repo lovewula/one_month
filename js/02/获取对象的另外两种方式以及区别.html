@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="KeyWords" content="关键字，关键字">
+		<meta name="Description" content="网页描述">
+		<title></title>
+	</head>
+<body>
+	
+	<div class="box"></div>
+	<div class="box"></div>
+	<div class="box"></div>
+	<div class="box"></div>
+
+	<script>
+		/*
+
+			document.getElementById("")
+				// 前面加载的主体必须是 document
+				// 静态方法
+			document.getElementsByClassName("")
+			document.getElementsByTagName("")
+				// 前面加载的主体可以不是document
+				// 动态方法
+		*/
+
+		var aDiv = document.getElementsByClassName("box");
+
+		aDiv.innerHTML = '12345';
+
+		// alert(aDiv.length)
+	</script>
+</body>
+</html>
