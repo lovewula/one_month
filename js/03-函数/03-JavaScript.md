@@ -1,6 +1,6 @@
-# 03-JavaScript
+# 03-函数
 
-## 函数
+### 有名函数和匿名函数
 
 * 匿名函数  
 
@@ -33,7 +33,7 @@
     document.onclick = a; // 充当事件函数
     ```
 
-    ​
+### 函数定义和函数表达式
 
 * 函数定义
 
@@ -69,14 +69,11 @@
   * 形参  函数在定义的时候
   * 不定参 （arguments）
 
-  ```
+  ```javascript
   a( 1, 2 )
-  ```
-
-
   function a(a, b){  //形参
   	// arguments
-    var a = 1 , b = 2 ;
+    	var a = 1 , b = 2 ;
   }
   ```
 
