@@ -20,7 +20,7 @@
 |            `E[attr^="wula"]`             | 选取元素`E`,如果元素中有`attr`属性而且属性是以`wula`开头的，就会被选中该元素 |
 |            `E[attr*="wula"]`             | 选取元素`E`,如果元素中有`attr`属性而且属性任何位置包含了`wula`就会被选中该元素 |
 
-**示例在**[`CSS3`属性选择器](file:///D:/%E5%A4%87%E8%AF%BE/one_month/css3/css3%E5%B1%9E%E6%80%A7%E9%80%89%E6%8B%A9%E5%99%A8.html)
+**示例在**[`CSS3`属性选择器](css3属性选择器.html)
 
 ## 结构伪类选择器
 
@@ -34,17 +34,17 @@
 | `E:first-child`   | 选择父元素的第一个子元素                             |
 | `E:last-child`    | 选择父元素的最后一个子元素                            |
 | `E:only-child`    | 选择父元素中唯一的子元素（该父元素只有一个子元素）这样可以用派生选择器      |
-| **示例 **           | [`css3`伪类选择器之`child`](file:///D:/%E5%A4%87%E8%AF%BE/one_month/css3/css3%E4%BC%AA%E7%B1%BB%E9%80%89%E6%8B%A9%E5%99%A8%E4%B9%8Bchild.html)· |
+| **示例 **           | [`css3`伪类选择器之`child`](css3伪类选择器之child.html) |
 | `E:nth-of-type`   | 选择同类型的第`n`个兄弟元素，也是能传`odd`和`even`         |
 | `E:first-of-type` | 选择同类型的第一个同级兄弟元素                          |
 | `E:last-of-type`  | 选择同类型的最后一个同级兄弟元素                         |
 | `E:only-of-type`  | 选择父元素中特定类型的唯一子元素（该父元素有多个子元素）             |
-| **示例**            | [`css3`伪类选择器之`type`](file:///D:/%E5%A4%87%E8%AF%BE/one_month/css3/css3%E4%BC%AA%E7%B1%BB%E9%80%89%E6%8B%A9%E5%99%A8%E4%B9%8Btype.html) |
+| **示例**            | [`css3`伪类选择器之`type`](css3伪类选择器之type.html) |
 | `:root`           | 选择文档的根元素 ，在 `HTML`中，根元素永远是`HTML`         |
 | `E:not(selector)` | 选择某个元素之外的所有元素                            |
 | `E:empty`         | 选择一个不包含任何子元素的元素，注意文本节点也可以看成子元素           |
 | `E:target`        | 选取页面中的某个`target`元素,`target`就是该元素被当作页面超链接类使用，描点 |
-| **示例**            | [css3伪类选择器之others](file:///D:/%E5%A4%87%E8%AF%BE/one_month/css3/css3%E4%BC%AA%E7%B1%BB%E9%80%89%E6%8B%A9%E5%99%A8%E4%B9%8Bothers.html) |
+| **示例**            | [css3伪类选择器之others](css3伪类选择器之others.html) |
 
 
 
