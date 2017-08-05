@@ -1,0 +1,33 @@
+## `fieldest` 和 `legend`
+
+用`fieldest`给表单进行分组，其中`legend`用于定义某一组的表单标题
+
+```html
+<fieldset>
+  	<legend> 表单组标题 </legend>
+</fieldset>
+```
+
+作用 
+
+* 增强表单的语义
+* 可以定义`fieldset`元素的`disabled`属性来禁用整个组中的表单元素
+
+
+
+### `figure` 和 `figcaption`
+
+增强语义化
+
+
+
+```html
+<figure>
+	<img src=""  alt="" />
+  	<figcaption>
+</figure>
+```
+
+说明
+
+* `figure`用于包含图片和图注，`figcaption`用于表示图注文字
