@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>navigator</title>
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<script type="text/javascript" src="js/jquery.js" ></script>
+		<script type="text/javascript" src="js/bootstrap.js" ></script>
+	</head>
+	<body>
+		<div class="container">
+			<!--
+            	作者：char_web@163.com
+            	时间：2016-12-08
+            	描述：导航条知识点
+            	1：导航条是包括导航的 导航条 = 导航+搜索框+brand+搜索框+。。。。。
+            	2：导航条用法：a>在导航的基础上 ul class = "nav" 添加class navbar-nav
+            			 b>在导航的外层套用一层div容器 并加上class <div class="navbar navbar-default"></div>
+            -->
+            <!-- navbar样式的作用是控制导航条大小，边距行距
+            	 navbar-default 是控制颜色风格
+            	 	.navbar{
+            	 		position:relative
+            	 		min-height:50px;
+            	 		margin-bottom:20px;
+            	 		border:1px solid transparent
+            	 	}
+            	 	.navbar-nav{
+            	 		margin:7.5px -15px
+            	 	}
+            -->
+            <div class="h1 page-header text-center">导航条-navbar </div>
+            <!-- 导航条里面只包含导航 -->
+            <div class="navbar navbar-default">
+            	<ul class="nav navbar-nav">
+            		<li class="active"><a href="javascript:void(0);">新闻</a></li>
+            		<li><a href="javascript:void(0);">音乐</a></li>
+            		<li><a href="javascript:void(0);">视频</a></li>
+            		<li><a href="javascript:void(0);">体育</a></li>
+            		<li><a href="javascript:void(0);">两性</a></li>
+            	</ul>
+            </div>
+            
+            <br />
+            <!-- 导航条里面包含导航+导航头 -->
+            <div class="navbar navbar-default">
+            	<!-- navbar-header ：float:left -->
+            	<div class="navbar-header">
+            		<button class="btn btn-default" style="margin: 8px 8px 5px 5px;">
+            			<span class="glyphicon glyphicon-apple"></span>
+            		</button>
+            	</div>
+            	<ul class="nav navbar-nav">
+            		<li class="active"><a href="javascript:void(0);">新闻</a></li>
+            		<li><a href="javascript:void(0);">音乐</a></li>
+            		<li><a href="javascript:void(0);">视频</a></li>
+            		<li><a href="javascript:void(0);">体育</a></li>
+            		<li><a href="javascript:void(0);">两性</a></li>
+            	</ul>
+            </div>
+            
+            <br /><br />
+            <!-- 导航条包括导航+导航头+搜索框 -->
+            <div class="navbar navbar-default">
+            	<div class="navbar-header">
+            		<!-- navbar-brand 控制字体显示大小，控制显示宽度 -->
+            		<button class="btn btn-default navbar-brand" style="margin:0px 5px 0px 5px;">
+            			<span class="glyphicon glyphicon-camera"></span>
+            		</button>
+            	</div>
+            	<ul class="nav navbar-nav">
+            		<li class="active"><a href="javascript:void(0);">新闻</a></li>
+            		<li><a href="javascript:void(0);">音乐</a></li>
+            		<li><a href="javascript:void(0);">视频</a></li>
+            		<li><a href="javascript:void(0);">体育</a></li>
+            		<li><a href="javascript:void(0);">两性</a></li>
+            	</ul>
+            	<div class="navbar-form">
+            		<div class="input-group">
+            			<input type="text" class="form-control" placeholder="请输入关键字" />
+            			<span class="input-group-btn">
+            				<button class="btn btn-primary">搜索</button>
+            			</span>
+            		</div>
+            	</div>
+            </div>
+            
+            <br /><br />
+            
+            <!-- 导航条包括导航+导航头+搜索框(搜索图片) -->
+        	<div class="navbar navbar-default">
+        		   	<div class="navbar-header">
+            		<button class="btn btn-default" style="margin: 8px 8px 5px 5px;">
+            			<span class="glyphicon glyphicon-zoom-in"></span>
+            		</button>
+            	</div>
+            	<ul class="nav navbar-nav">
+            		<li class="active"><a href="javascript:void(0);">新闻</a></li>
+            		<li><a href="javascript:void(0);">音乐</a></li>
+            		<li><a href="javascript:void(0);">视频</a></li>
+            		<li><a href="javascript:void(0);">体育</a></li>
+            		<li><a href="javascript:void(0);">两性</a></li>
+            	</ul>
+            	<div class="navbar-form">
+            		<!-- navbar-right:居右 But no margin -->
+            		<div class="input-group pull-right">
+            			<input type="text" class="form-control" placeholder="请输入关键字" />
+            			<span class="input-group-addon">
+            				<span class="glyphicon glyphicon-search "></span>
+            			</span>
+            		</div>
+            	</div>
+        	</div>
+        	
+            <br /><br />
+            <!-- 导航条包括导航+导航头+搜索框(响应式导航) -->
+            <!-- 导航条浮动在最上面 ---- navbar-fixed-top -->
+            <div class="navbar navbar-default">  <!-- navbar-inverse -->
+            	<div class="navbar-header">
+            		<!-- navbar-toggle 在宽屏时不显示内容，即icon-bar -->
+            		<button class="navbar-toggle" data-toggle = "collapse" data-target = ".navbar-collapse-responsive">
+            			<span class="icon-bar"></span>
+            			<span class="icon-bar"></span>
+            			<span class="icon-bar"></span>
+            		</button>
+            		<button class="btn btn-default navbar-brand" style="0px 5px 0px 5px">
+            			<span class="glyphicon glyphicon-bell"></span>
+            		</button>
+            	</div>
+            	<!-- collapse navber-collapse 在宽屏时不显示所包含内容，在点击展开按钮 显示数据 -->
+            	<div class="collapse navbar-collapse navbar-collapse-responsive">
+            		<ul class="nav navbar-nav">
+            			<li class="active"><a href="javascript:void(0);">新闻</a></li>
+            			<li>
+            				<a href="javascript:void(0);">音乐
+            					<span class="label label-default">new</span>
+            				</a>
+            			</li>
+            			<li><a href="javascript:void(0);">电影</a></li>
+            			<li><a href="javascript:void(0);">视频</a></li>
+            			<li>
+            				<a href="javascript:void(0);">两性
+            					<span class="badge pull-right">5</span>
+            				</a>
+            			</li>
+            		</ul>
+            	</div>
+            </div>
+            <br /><br /><br /><br /><br /><br />
+            <br /><br /><br /><br /><br /><br />
+            
+            
+		</div>
+	</body>
+</html>

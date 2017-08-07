@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>navigator</title>
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<script type="text/javascript" src="js/jquery.js" ></script>
+		<script type="text/javascript" src="js/bootstrap.js" ></script>
+	</head>
+	<body>
+		<div class="container">
+        <!--
+        	作者：char_web@163.com 
+        	时间：2016-12-08
+        	描述：导航知识点
+        	nav只设置了布局方式 取消列表原点  active disable等基础样式
+        	         它必须配合nav-tabs nav-pills等附加样式才能呈现出导航效果
+        -->
+        	<!-- tab页样式导航 nav-tabs样式作用：水平方向展示，出现边框 -->
+       		<ul class=" nav nav-tabs nav-justified">
+    			<!-- class="active" 表示选中当前tab页，高亮显示，通过js控制转换 -->
+    			<li class="active"><a href="javascript:void(0);">新闻</a></li>
+    			<li><a href="javascript:void(0);">音乐</a></li>
+    			<li><a href="javascript:void(0);">视频</a></li>
+    			<li><a href="javascript:void(0);">体育</a></li>
+    			<li><a href="javascript:void(0);">两性</a></li>
+        	</ul>
+        	
+        	<br /><br />
+        	<!-- 胶囊式导航 水平分片展示 选中高亮  -->
+        	<ul class="nav nav-pills nav-justified">
+        		<!-- class="active" 表示选中当前tab页，高亮显示，通过js控制转换 -->
+    			<li><a href="javascript:void(0);">新闻</a></li>
+    			<li class="active"><a href="javascript:void(0);">音乐</a></li>
+    			<li><a href="javascript:void(0);">视频</a></li>
+    			<li><a href="javascript:void(0);">体育</a></li>
+    			<li><a href="javascript:void(0);">两性</a></li>
+        	</ul>
+        	
+        	<br />
+        	<!-- 垂直分布导航 折行 -->
+        	<ul class="nav nav-pills nav-stacked">
+        		<!-- class="active" 表示选中当前tab页，高亮显示，通过js控制转换 -->
+    			<li><a href="javascript:void(0);">新闻</a></li>
+    			<li><a href="javascript:void(0);">音乐</a></li>
+    			<li class="active"><a href="javascript:void(0);">视频</a></li>
+    			<li><a href="javascript:void(0);">体育</a></li>
+    			<li><a href="javascript:void(0);">两性</a></li>
+        	</ul>
+        	
+        	<br />
+        	<!-- 面包屑式导航  在加载下一个li元素之前加斜杠   -->
+        	<ul class="breadcrumb">
+        		<!-- 可以在导航元素标签前加入i标签图片 <i class="glyphicon glyphicon-home"></i> -->
+        		<li><a href="javascript:void(0);">新闻</a></li>
+        		<li><a href="javascript:void(0);">音乐</a></li>
+        		<li><a href="javascript:void(0);">视频</a></li>
+        		<li><a href="javascript:void(0);">体育</a></li>
+        		<li><a href="javascript:void(0);">两性</a></li>
+        	</ul>
+        	
+        	<br />
+        	<!-- 包含下拉菜单的胶囊导航 且等分导航--> 
+    		<ul class="nav nav-pills nav-justified">
+    			<li class="dropdown" >
+    				<a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+    					新闻<span class="caret"></span>
+    				</a>
+    				<ul class="dropdown-menu pull-right">
+        				<li><a href="javascript:void(0)">国内新闻</a></li>
+        				<li><a href="javascript:void(0)">国外新闻</a></li>
+    				</ul>
+    			
+    			</li>	
+    			<li><a href="javascript:void(0);">音乐</a></li>
+    			<li><a href="javascript:void(0);">视频</a></li>
+    			<li><a href="javascript:void(0);">体育</a></li>
+    			<li><a href="javascript:void(0);">两性</a></li>
+    		</ul>
+    		
+    		<br />
+    		<!--分页导航 -->
+    		<ul class="pagination">
+    			<li><a href="javascript:void(0);">首页</a></li>
+    			<li><a href="javascript:void(0);">上一页</a></li>
+    			<li class="active"><a href="javascript:void(0);">1</a></li>
+    			<li><a href="javascript:void(0);">2</a></li>
+    			<li><a href="javascript:void(0);">3</a></li>
+    			<li><a href="javascript:void(0);">4</a></li>
+    			<li><a href="javascript:void(0);">...</a></li>
+    			<li class="disabled"><a href="javascript:void(0);">下一页</a></li>
+    			<li class="disabled"><a href="javascript:void(0);">尾页</a></li>
+    		</ul>	         	
+        </div>
+	</body>
+</html>

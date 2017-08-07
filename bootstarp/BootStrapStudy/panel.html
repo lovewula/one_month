@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>panel面板</title>
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<script type="text/javascript" src="js/jquery.js" ></script>
+		<script type="text/javascript" src="js/bootstrap.js" ></script>
+	</head>
+	<body>
+		<div class="container">
+			<!--
+            	作者：char_web@163.com
+            	时间：2016-12-11
+            	描述：面板知识点，面板大多应用为应用系统的主页
+            -->
+            <!--
+				 .panel {
+				  margin-bottom: 20px;
+				  background-color: #fff;
+				  border: 1px solid transparent;
+				  border-radius: 4px;
+				  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+				          box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+				}
+				.panel-body {
+				  padding: 15px;
+				}
+				.panel-heading {
+				  padding: 10px 15px;
+				  border-bottom: 1px solid transparent;
+				  border-top-left-radius: 3px;
+				  border-top-right-radius: 3px;
+				}
+				.panel-title {
+				  margin-top: 0;
+				  margin-bottom: 0;
+				  font-size: 16px;
+				  color: inherit;
+				}    -->
+			<h3> 普通面板 </h3>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="panel panel-default">
+						<div class="panel-heading">panel-heading</div>
+						<div class="panel-body">
+							<p>内置组件,这是第一个测试面板</p>
+							<p>内置组件,这是第二个测试面板</p>
+							<p>内置组件,这是第三个测试面板</p>
+							<p>内置组件,这是第四个测试面板</p>
+							<p>内置组件,这是第五个测试面板</p>
+						</div>
+						<div class="panel-footer">panel-footer</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<!-- panel-success info warning danger-->
+					<div class="panel panel-primary">
+						<div class="panel-heading">panel-heading</div>
+						<div class="panel-body">
+							<p>内置组件,这是第一个测试面板</p>
+							<p>内置组件,这是第二个测试面板</p>
+							<p>内置组件,这是第三个测试面板</p>
+							<p>内置组件,这是第四个测试面板</p>
+							<p>内置组件,这是第五个测试面板</p>
+						</div>
+						<div class="panel-footer">panel-footer</div>
+					</div>
+				</div>
+			</div>
+			
+			<br /><br />
+			<h3>带表格和列表的控制面板</h3>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="panel panel-success">
+						<div class="panel-heading">panel-heading</div>
+						<div class="panel-body">
+							<table class="table"> <!-- table border-->
+								<thead>
+									<tr>
+										<th>Name</th>
+										<th>Sex</th>
+										<th>Age</th>
+										<th>Hobby</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Char</td>
+										<td>man</td>
+										<td>18</td>
+										<td>ball</td>
+									</tr>
+									<tr>
+										<td>Car</td>
+										<td>man</td>
+										<td>18</td>
+										<td>ball</td>
+									</tr>
+									<tr>
+										<td>jom</td>
+										<td>man</td>
+										<td>18</td>
+										<td>ball</td>
+									</tr>
+									<tr>
+										<td>qwe</td>
+										<td>man</td>
+										<td>18</td>
+										<td>ball</td>
+									</tr>
+								</tbody>
+							</table>
+							
+						</div>
+						<div class="panel-footer">panel-footer</div>
+					</div>
+				</div>	
+				<div class="col-md-6">
+					<div class="panel panel-danger">
+						<div class="panel-heading">panel-heading</div>
+						<div class="panel-body">
+							<div class="list-group">
+								<li class="list-group-item">入学通知</li>
+								<li class="list-group-item">上课通知</li>
+								<li class="list-group-item">作业通知</li>
+								<li class="list-group-item">毕业通知</li>
+							</div>
+						</div>
+						<div class="panel-footer">panel-footer</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+	</body>
+</html>

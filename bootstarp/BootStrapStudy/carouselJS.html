@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>carousel轮播图</title>
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<script type="text/javascript" src="js/jquery.js" ></script>
+		<script type="text/javascript" src="js/bootstrap.js" ></script>
+	</head>
+	<body>
+		<!--
+        	作者：char_web@163.com
+        	时间：2016-12-23
+        	描述：carousel轮播图
+        		.carousel("cycle")  从左向右循环播放
+        		.carousel("pause") 停止循环播放
+        		.carousel("number") 循环到指定的帧，下标从0开始，类似于数组
+        		.carousel("prev") 返回到上一帧
+        		.carousel("next") 下一帧
+        		-
+        		data-slide  接收关键字prev or next 用来改变幻灯片相对当前位置的位置
+        		data-slide-to  向轮播传递一个原始滑动索引  data-slide-to="2"代表把
+        			滑块移动到一个特定的索引，索引从0开始计数
+        		data-ride="carousel" 属性用于标记轮播在页面加载时就开始动画播放
+        		data-interval 自动循环每个项目之间的时间量，如果为false，轮播将不会自动循环
+        		data-pause 鼠标进入时暂时轮播循环，离开时继续轮播循环
+        		data-wrap 轮播是否持续循环
+        			data-interval = "100"
+        			data-pause = "false"
+        			data-wrap = "false"
+        -->
+        <div class="container">
+        	<h3>carousel 轮播</h3>
+        	<div id="carouselContainer" class="carousel" data-ride="carousel" style="width: 400px;height: 300px;">
+        		<!-- 轮播的个数  -->
+        		<ol class="carousel-indicators">
+        			<li class="active" data-target = "#carouselContainer" data-slide-to = "0"></li>
+        			<li data-target = "#carouselContainer" data-slide-to = "1"></li>
+        			<li data-target = "#carouselContainer" data-slide-to = "2"></li>
+        			<li data-target = "#carouselContainer" data-slide-to = "3"></li>
+        		</ol>
+        		<!-- 轮播内容区 -->
+        		<div class="carousel-inner" style="width: 100%;height: 300px;">
+        			<div class="item active">
+        				<a href="javascript:void(0)">
+        					<img src="img/wt.jpg" alt="" class="img-responsive" />
+        				</a>
+        				<!--<div class="carousel-caption">
+        					<h3>wt</h3>
+        					<p>你懂滴</p>
+        				</div>-->
+        			</div>
+        			<div class="item">
+        				<a href="javascript:void(0)">
+        					<img src="img/wt01.jpg" alt="" class="img-responsive" />
+        				</a>
+        			</div>	
+        			<div class="item">
+        				<a href="javascript:void(0)">
+        					<img src="img/wt02.jpeg" alt="" class="img-responsive" />
+        				</a>
+        			</div>	
+        			<div class="item">
+        				<a href="javascript:void(0)">
+        					<img src="img/1234.jpg" alt="" class="img-responsive" />
+        				</a>
+        			</div>	
+        		</div>
+        		<!-- 轮播区左右控制  -->
+        		<div>
+        			<a class="left carousel-control" href="#carouselContainer" data-slide = "prev">
+        				<span class="glyphicon glyphicon-chevron-left"></span>
+        			</a>
+        			<a class="right carousel-control" href="#carouselContainer" data-slide = "next">
+        				<span class="glyphicon glyphicon-chevron-right"></span>
+        			</a>
+        		</div>
+        	</div> 
+        </div>
+        
+	</body>
+</html>

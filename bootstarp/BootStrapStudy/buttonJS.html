@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>buttonJS按钮</title>
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<script type="text/javascript" src="js/jquery.js" ></script>
+		<script type="text/javascript" src="js/bootstrap.js" ></script>
+	</head>
+	<body>
+		<!--
+        	作者：char_web@163.com
+        	时间：2016-12-23
+        	描述：button.js  应用于下载软件，提示正在下载，下载完成
+        -->
+		<div class="container">
+			<div class="h3 page-header">按钮</div>
+			<div>
+				<button type="button" class="btn btn-success active"
+					id = "myBtn"
+					data-toggle = "button"
+					data-complete-text = "loaded"
+					data-loading-text  =  "loading..">btn按钮</button>
+			</div>
+		</div>
+		<script type="text/javascript">
+			/*$("#myBtn").click(function(){
+				$(this).button("loading")
+			})*/
+			
+			$("#myBtn").click(function(){
+				$(this).button("loading"); 
+				
+				//$(this).button("complete");
+				setTimeout(function(){
+					$("#myBtn").button("complete");
+				},1000);
+			});
+		</script>
+	</body>
+</html>

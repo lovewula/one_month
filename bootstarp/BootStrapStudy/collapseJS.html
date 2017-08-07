@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>collapseJS跑马灯</title>
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<script type="text/javascript" src="js/jquery.js" ></script>
+		<script type="text/javascript" src="js/bootstrap.js" ></script>
+	</head>
+	<body>
+		<!--
+        	作者：char_web@163.com
+        	时间：2016-12-23
+        	描述：colapseJS知识点
+        -->
+        <div class="container">
+        	<h3>collapse面板</h3>
+        	<div class="panel-group" id="panelContainer">
+        		<div class="panel panel-default">
+        			<div class="panel-heading">
+        				<div class="h4 panel-title">
+        					<a id="collapseA" href="#collapseAContent"
+        						data-toggle="collapse" data-parent="#panelContainer">CollapseA
+        					</a>
+        				</div>
+        			</div>
+        			<div id="collapseAContent" class="panel-collapse collapse in">
+	        			<div class="panel-body">
+	        				<p>内置组件:第一个控制面板</p>
+	        				<p>内置组件:第一个控制面板</p>
+	        				<p>内置组件:第一个控制面板</p>
+	        				<p>内置组件:第一个控制面板</p>
+	        				<p>内置组件:第一个控制面板</p>
+	        			</div>
+        			</div>
+        		</div>
+        		
+        			<div class="panel panel-default">
+        			<div class="panel-heading">
+        				<div class="h4 panel-title">
+        					<a id="collapseB" href="#collapseBContent"
+        						data-toggle="collapse" data-parent="#panelContainer">CollapseB
+        					</a>
+        				</div>
+        			</div>
+        			<div id="collapseBContent" class="panel-collapse collapse">
+	        			<div class="panel-body">
+	        				<p>内置组件:第二个控制面板</p>
+	        				<p>内置组件:第二个控制面板</p>
+	        				<p>内置组件:第二个控制面板</p>
+	        				<p>内置组件:第二个控制面板</p>
+	        				<p>内置组件:第二个控制面板</p>
+	        			</div>
+        			</div>
+        		</div>
+        		
+        			<div class="panel panel-default">
+        			<div class="panel-heading">
+        				<div class="h4 panel-title">
+        					<a id="collapseC" href="#collapseCContent"
+        						data-toggle="collapse" data-parent="#panelContainer">CollapseC
+        					</a>
+        				</div>
+        			</div>
+        			<div id="collapseCContent" class="panel-collapse collapse">
+	        			<div class="panel-body">
+	        				<p>内置组件:第三个控制面板</p>
+	        				<p>内置组件:第三个控制面板</p>
+	        				<p>内置组件:第三个控制面板</p>
+	        				<p>内置组件:第三个控制面板</p>
+	        				<p>内置组件:第三个控制面板</p>
+	        			</div>
+        			</div>
+        		</div>
+        		
+        	</div>
+        </div>
+		
+		<script type="text/javascript">
+		
+			$(document).off(".data-api");
+			
+			$("#collapseA").click(function(){
+				$(".collapse").hide();
+				$("#collapseAContent").show();
+			})
+			$("#collapseB").click(function(){
+				$(".collapse").hide();
+				$("#collapseBContent").show();
+			})
+			$("#collapseC").click(function(){
+				$(".collapse").hide();
+				$("#collapseCContent").show();
+			})
+			
+			//show showm hide hidden
+//			$(".collapse").on("show.bs.collapse",function(){
+//				alert(show.bs.collapse);
+//			}).on("shown.bs.collapse",function(){
+//				alert(shown.bs.collapse);
+//			}).on("hide.bs.collapse",function(){
+//				alert(hide.bs.collapese);
+//			}).on("hidden.bs.collapese",function(){
+//				alert("hidden.bs.collapse");
+//			})
+		</script>
+	</body>
+</html>

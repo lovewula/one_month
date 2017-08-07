@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>dropdiwnJS下拉菜单</title>
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<script type="text/javascript" src="js/jquery.js" ></script>
+		<script type="text/javascript" src="js/bootstrap.js" ></script>
+	</head>
+	<body>
+		<!--
+        	作者：char_web@163.com
+        	时间：2016-12-24
+        	描述：dropdownJS知识点
+        	1.声明式触发 data-toggle
+        	2.javascript
+        -->
+		<div class="container">
+			<!-- position:relative dropdown-menu做个绝对定位基准 上拉的dropUp -->
+			<div class="dropdown">
+				<!-- data-toggle属性用于下拉js控制  首先隐藏dropdown-menu class包含列表元素 点击时open menu -->
+				<button class="btn btn-default dropdown" data-toggle="dropdown" id="dropmenu">
+					下拉菜单<span class="caret"></span>
+				</button>
+				<!-- 无序列表，去点原点和父容器绝对定位absolute 菜单居左居右 pull-right -->
+				<ul class="dropdown-menu">
+					<!-- dropdown-header把内容设置为disabled -->
+					<!-- <li class="dropdown-header">分类</li>-->	
+					<li><a  href="javascript:void(0);">html5</a></li>
+					<li><a href="javascript:void(0);">css3</a></li>
+					<!-- <li class="divider">></li> -->	
+					<!-- <li class="dropdown-header">分类2</li> -->	
+					<li><a href="javascript:void(0);">javascript</a></li>
+					<li><a href="javascript:void(0);">jquery</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<script type="text/javascript">
+			$(document).off(".data-api");
+			$(".dropdown").dropdown();
+			
+//			$(".dropdown").on("show.bs.dropdown",function(){
+//				alert("show.bs.dropdown")
+//			}).on("shown.bs.dropdown",function(){
+//				alert(shown.bs.dropdown)
+//			}).on("hide.bs.dropdown",function(){
+//				alert("hide.bs.dropdown")
+//			}).on("hidden.bs.dropdown",function(){
+//				alert("hidden.bs.dropdown")
+//			})
+
+		</script>
+	</body>
+</html>

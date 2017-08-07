@@ -1,0 +1,44 @@
+<!doctype html>
+
+<html>
+	<head>
+		<!-- 字符编码集 -->
+		<meta charset="utf-8" />
+		<meta name="keywords" content="关键词，关键字" />
+		<meta name="description" content="页面描述信息-80字以内描述信息" />
+		<title>绝对 - slice</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			.box {
+				width: 260px;
+				height: 260px;
+				background: red;
+				/* 
+					绝对定位----absolute
+						1.  不占据任何空间
+						2.  以定位的父级盒子(定位父级)来参考移动
+						(当没有使用[定位]会以浏览器边缘来参考移动)
+						定位: relative absolute fixed   除static以外的定位
+				 */
+				position: absolute;
+				right: 0px;
+				bottom: 0px;
+			}
+
+			.box1 {
+				width: 260px;
+				height: 260px;
+				background: blue;
+			}
+		</style>
+	</head>
+<body>
+	<div>
+		<div class="box"></div>
+	</div>
+	<div class="box1"></div>
+</body>
+</html>

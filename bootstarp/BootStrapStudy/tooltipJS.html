@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>tooltip提示框</title>
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<script type="text/javascript" src="js/jquery.js" ></script>
+		<script type="text/javascript" src="js/bootstrap.js" ></script>
+	</head>
+	<body>
+		<!--
+        	作者：char_web@163.com
+        	时间：2016-12-25
+        	描述：Tip 应用于简单的提示信息，其实就是原html的title属性
+        	but 不能通过data-*　的方式触发
+        	
+        	data-animation boolean 提示工具使用CSS渐变滤镜效果
+        	data-html boolean 向提示工具拆入HTML
+        	data-placement 规定如何定位提示工具(即top|bottom|left|right|auto)
+        	data-title 如果未指定title属性，则title选项默认的title值
+        	data-trigger  定义如何触发提示工具 click|hover|foucs|manual
+        	data-delay 延迟显示和隐藏的提示工具的毫秒数
+        	 	delay:
+        	 	{show:500,hide:100}
+        -->
+		<div class="container">
+			<div class="h3 page-header">Tip提示</div>
+			<div>
+				<button type="button" class="btn btn-success" data-toggle="tooltip"
+					data-original-title="<html>你猜我猜不猜</html>"
+					data-placement="auto" data-animation="false"
+					data-html="true" data-delay="300" id="myBtn"
+					>猜猜我是谁</button>
+			</div>
+		</div>
+		
+		<script type="text/javascript">
+			$("#myBtn").tooltip();
+			
+			/*$("[data-toggle='tooltip']").on("show.bs.tooltip",function(){
+				alert("show.bs.tooltip");
+			}).on("shown.bs.tooltip",function(){
+				alert("shown.bs.tooltip");
+			}).on("hide.bs.tooltip",function(){
+				alert("hide.bs.tooltip");
+			}).on("hidden.bs.tooltip",function(){
+				alert("hidden.bs.tooltip");
+			})*/
+		</script>
+	</body>
+</html>

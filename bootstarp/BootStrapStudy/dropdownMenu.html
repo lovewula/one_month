@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>dropdownMenu</title>
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<script type="text/javascript" src="js/jquery.js" ></script>
+		<script type="text/javascript" src="js/bootstrap.js" ></script>
+	</head>
+	<body>
+		<!--
+        	作者：char_web@163.com
+        	时间：2016-12-08
+        	描述：下拉菜单知识点
+        -->
+		<div class="container">
+			<!-- position:relative dropdown-menu做个绝对定位基准 上拉的dropUp -->
+			<div class="dropdown">
+				<!-- data-toggle属性用于下拉js控制  首先隐藏dropdown-menu class包含列表元素 点击时open menu -->
+				<button class="btn btn-default" data-toggle="dropdown">
+					下拉菜单<span class="caret"></span>
+				</button>
+				<!-- 无序列表，去点原点和父容器绝对定位absolute 菜单居左居右 pull-right -->
+				<ul class="dropdown-menu">
+					<!-- dropdown-header把内容设置为disabled -->
+					<!-- <li class="dropdown-header">分类</li>-->	
+					<li><a  href="javascript:void(0);">html5</a></li>
+					<li><a href="javascript:void(0);">css3</a></li>
+					<!-- <li class="divider">></li> -->	
+					<!-- <li class="dropdown-header">分类2</li> -->	
+					<li><a href="javascript:void(0);">javascript</a></li>
+					<li><a href="javascript:void(0);">jquery</a></li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>

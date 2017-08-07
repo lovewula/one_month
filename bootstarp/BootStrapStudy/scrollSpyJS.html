@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>scrollSpyJS监听</title>
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<script type="text/javascript" src="js/jquery.js" ></script>
+		<script type="text/javascript" src="js/bootstrap.js" ></script>
+	</head>
+	<body>
+		<!--
+        	作者：char_web@163.com
+        	时间：2016-12-25
+        	描述：scrollSpyJS监听知识点
+        -->
+        <div class="container">
+        	<!-- 导航条里面包含导航+导航头  -->
+        	<div id="navbarbar" class="navbar navbar-default" >
+        		<!-- bavbar-header:folat:left -->
+        		<div class="navbar-header">
+        			<a href="javascript:void(0);" class="navbar-brand">滚动监听</a>
+        		</div>
+        		<div class="collapse navbar-collapse">
+        			<ul class="nav navbar-nav">
+        				<li><a href="#news">新闻</a></li>
+        				<li><a href="#movie">电影</a></li>
+        				<li><a href="#video">视频</a></li>
+        				<li><a href="#music">音乐</a></li>
+        			</ul>
+        		</div>
+        	</div>
+        	
+        	<div class="container" id="scrollContent" data-spy = "scroll" data-target = "#navbarbar"
+        		style="height: 400px;overflow: auto;position: relative;border: 1px solid red;">
+        		<h3 id="news">新闻</h3>
+        			<p>新闻(News)</p>
+        			<p>新闻(News)</p>
+        			<p>新闻(News)</p>
+        			<p>新闻(News)</p>
+        			<p>新闻(News)</p>
+        			<p>新闻(News)</p>
+        			<p>新闻(News)</p>
+        			<p>新闻(News)</p>
+        			<p>新闻(News)</p>
+        			<p>新闻(News)</p>
+        			<p>新闻(News)</p>
+        			<p>新闻(News)</p>
+        			<p>新闻(News)</p>
+        			<p>新闻(News)</p>
+        		<h3 id="movie">电影</h3>	
+        			<p>电影(Movie)</p>
+        			<p>电影(Movie)</p>
+        			<p>电影(Movie)</p>
+        			<p>电影(Movie)</p>
+        			<p>电影(Movie)</p>
+        			<p>电影(Movie)</p>
+        			<p>电影(Movie)</p>
+        			<p>电影(Movie)</p>
+        			<p>电影(Movie)</p>
+        			<p>电影(Movie)</p>
+        			<p>电影(Movie)</p>
+        			<p>电影(Movie)</p>
+        			<p>电影(Movie)</p>
+        			<p>电影(Movie)</p>
+        			<p>电影(Movie)</p>
+        			<p>电影(Movie)</p>
+        			<p>电影(Movie)</p>
+        			<p>电影(Movie)</p>
+        			<p>电影(Movie)</p>
+       			<h3 id="video">视频</h3>
+       				<p>视频(Video)</p>
+       				<p>视频(Video)</p>
+       				<p>视频(Video)</p>
+       				<p>视频(Video)</p>
+       				<p>视频(Video)</p>
+       				<p>视频(Video)</p>
+       				<p>视频(Video)</p>
+       				<p>视频(Video)</p>
+       				<p>视频(Video)</p>
+       				<p>视频(Video)</p>
+       				<p>视频(Video)</p>
+       				<p>视频(Video)</p>
+       				<p>视频(Video)</p>
+       				<p>视频(Video)</p>
+       			<h3 id="music">音乐</h3>
+					<p>音乐(Music)</p>
+					<p>音乐(Music)</p>
+					<p>音乐(Music)</p>
+					<p>音乐(Music)</p>
+					<p>音乐(Music)</p>
+					<p>音乐(Music)</p>
+					<p>音乐(Music)</p>
+					<p>音乐(Music)</p>
+					<p>音乐(Music)</p>
+					<p>音乐(Music)</p>
+					<p>音乐(Music)</p>
+					<p>音乐(Music)</p>
+					<p>音乐(Music)</p>
+					<p>音乐(Music)</p>
+					<p>音乐(Music)</p>
+        	</div>
+        </div>
+        
+        <script type="text/javascript">
+//      	$(document).off(".data-api");
+//      	$("#scrollContent").scrollspy({target:'#navbarbar'})
+//      	
+//			$("#navbarbar").on("activate.bs.scrollsay",function(){
+//				alert(" scroll to next ");
+//			})
+        </script>
+	</body>
+</html>

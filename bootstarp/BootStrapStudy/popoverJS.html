@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>popover提示框</title>
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<script type="text/javascript" src="js/jquery.js" ></script>
+		<script type="text/javascript" src="js/bootstrap.js" ></script>
+	</head>
+	<body>
+		<!--
+        	作者：char_web@163.com
+        	时间：2016-12-25
+        	描述：popover 和title不同的是可以有内容提示
+        	data-animation boolean 提示工具使用CSS渐变滤镜工具
+        	data-html boolean 向提示工具插入HTML
+        	data-placement 规定如何定位提示工具(top|bottom|left|right|auto)
+        	data-title 如果未指定title属性，则title选项是默认的title值
+        	data-trigger 定义如何触发提示工具: click|hover|focus|manual
+        	data-content 如果未指定data-content属性，则使用默认的content的值
+        	data-delay 延迟显示和隐藏的提示工具的毫秒数
+        	 	delay:
+        	 	{show:500,hide:100}
+        -->
+        <div class="container">
+        	<div class="h3 page-header">poopver 提示框</div>
+        	<div>
+        		<button type="button" class="btn btn-success" data-toggle="popover"
+        			data-original-title="<html>title:我知道这是一个pop over按钮</html>"
+        			data-content="content:要做一个论坛,路还长着,加油"
+        			data-placement="right" data-animation="false" data-html="true"
+        			data-delay="300" data-trigger="click" id="myBtn">一个popover按钮</button>
+        	</div>
+        </div>
+        
+        <script type="text/javascript">
+        	$("[data-toggle='popover']").popover();
+        </script>
+	</body>
+</html>

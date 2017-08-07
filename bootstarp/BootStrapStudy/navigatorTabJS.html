@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>navigatorTabJS导航JS</title>
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<script type="text/javascript" src="js/jquery.js" ></script>
+		<script type="text/javascript" src="js/bootstrap.min.js" ></script>
+		
+	</head>
+	<body>
+		<div class="container"> 
+		<!--
+        	作者：char_web@163.com
+        	时间：2016-12-22
+        	描述：导航js知识点
+        -->
+        <!-- tab页样式导航  nav-tabs样式作用 水平方向展示,出现边框-->
+        	<ul class="nav nav-tabs" id="navTabs">
+        		<!-- 如果不是A标签就用data-target属性表示目标内容 -->
+        		<li class="active"><a href="#news" data-toggle="tab">新闻</a></li>
+        		<li><a href="#movie" data-toggle="tab">电影</a></li>
+        		<li><a href="#video" data-toggle="tab">视频</a></li>
+        		<li><a href="#music" data-toggle="tab">音乐</a></li>
+        		<li><a href="#sports" data-toggle="tab">体育</a></li>
+        	</ul>
+        	
+        	<div class="tab-content">
+        		<div class="tab-pane active" id="news">news content</div>
+        		<div class="tab-pane" id="movie">movie content</div>
+        		<div class="tab-pane" id="video">video content</div>
+        		<div class="tab-pane" id="music">music content</div>
+        		<div class="tab-pane" id="sports">sports content</div>
+        	</div>
+		</div>
+		<script type="text/javascript">
+			$(document).off(".data-api");
+			//点击id为navTab内容块下面的a标签时show当前的tab
+			$("#navTabs a").on("click",function(){
+				//$(this)["tab"]{"show"};
+				alert("你确认进入此页面");
+				$(this).tab("show");
+			})
+			
+			
+			//給A标签绑定事件 show shown hide hidden
+/*			$("#navTabs a").on("show.bs.tab",function(e){
+				var value = "what id show.ba,tab doing?";
+				value +="e.target="+e.target;
+				//value +="---e.relatedTarget="+e.relatedTarget
+				alert(value);
+			}).on("shown.ba.tab",function(e){
+				var value = "what id shown.ba,tab doing?";
+				value +="e.target="+e.target;
+				//value +="---e.relatedTarget="+e.relatedTarget
+				alert(value);
+			}).on("hide.ba.tab",function(e){
+				var value = "what id hide.ba,tab doing?";
+				value +="e.target="+e.target;
+				//value +="---e.relatedTarget="+e.relatedTarget
+				alert(value);
+			}).on("hidden.ba.tab",function(e){
+				var value = "what id hidden.ba,tab doing?";
+				value +="e.target="+e.target;
+				//value +="---e.relatedTarget="+e.relatedTarget
+				alert(value);
+			})*/
+			
+		</script>
+	</body>
+</html>

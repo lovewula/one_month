@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>modal模态框</title>
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<script type="text/javascript" src="js/jquery.js" ></script>
+		<script type="text/javascript" src="js/bootstrap.js" ></script>
+	</head>
+	<body>
+		<!--
+        	作者：char_web@163.com
+        	时间：2016-12-22
+        	描述：动画过渡(Transitions) transitions.js
+        		模态弹窗(Modal) --对话框 modal.js
+        -->
+		<div class="container">\
+			<!--
+            	作者：char_web@163.com
+            	时间：2016-12-22
+            	描述：data-toggle 代表触发modal对象
+            		data-target 代表触发哪个modal对象
+            		data-backgrop true 代表单击背景框就消失,static则代表单击框还不会消失
+            		data-keyboard true 代表按下Esc键可以关闭弹出窗, false代表不能关闭弹出窗
+            		data-show true代表直接显示, false代表不直接显示
+            -->
+			<button class="btn btn-primary" type="button" id="myBtn"
+				data-toggle="modal" data-target="#myModal">
+				I'm a button click me 
+			</button>
+			
+			<div class="modal fade" id="myModal">
+				<div class="modal-dialog modal-lg">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">
+								<span aria-hiadden = "true">&times;</span>
+								<span class="sr-only">Close</span>
+							</button>
+							<h4 class="modal-title">popDiv Show</h4>
+						</div>
+						<div class="modal-body">
+							<p>It would be show the  Transitions</p>
+						</div>
+						<div class="modal-footer">
+							<button class="btn btn-default" type="button" id="myBtnClose" data-dismiss="modal">Close</button>
+							<button class="btn btn-default" type="button">Save</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script type="text/javascript">
+	/*		$(document).off(".data-api");
+			//用js事件触发
+			$(document).ready(function(){
+				$("#myBtn,#myBtnClose").click(
+					function(){
+						$("#myModal")["modal"]{"toggle"};
+					});
+			});*/
+		</script>
+	</body>
+</html>
