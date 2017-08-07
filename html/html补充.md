@@ -1,0 +1,35 @@
+## 补充
+
+* `audio`和`video`标签
+
+* `from`
+
+  * `method` 
+    * `get` or `post`
+
+  * `enctype ` 属性规定在发送到服务器之前应该如何对表单数据进行编码。大多数情况下该属性不需要设置
+
+    * `application/x-www-form-urlencoded`　　在发送前编码所有字符（默认）（空格转换为 "+" 加号，特殊符号转换为 ASCII HEX 值）
+    * `multipart/form-data `　不对字符编码。在使用包含文件上传控件的表单时，必须使用该值
+    * `text/plain`      空格转换为 "+" 加号，但不对特殊字符编码
+
+  * `input`的还有一些`type`和`input`的属性
+
+    `fieldest` 和 `legend`
+
+* 用`fieldest`给表单进行分组，其中`legend`用于定义某一组的表单标题
+
+  ```html
+  <fieldset>
+    	<legend> 表单组标题 </legend>
+  </fieldset>
+  ```
+
+  作用 
+
+  - 增强表单的语义
+  - 可以定义`fieldset`元素的`disabled`属性来禁用整个组中的表单元素
+
+  ​
+
+  ​
