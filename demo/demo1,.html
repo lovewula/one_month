@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- 设置编码为utf8 -->
+		<meta charset="utf-8" />
+		<title>html模版 - which</title>
+		<meta name="keywords" content="关键字">
+		<meta name="Description" content="描述内容">
+		<style type="text/css">
+		a{
+			text-decoration: none;
+		    color: #ccc;
+		    padding: 10px;
+		    position: relative;
+		    top: 100px;
+		    left: 200px;
+		}
+		a:before{
+			content: "";
+			height: 2px;
+			width: 100%;
+			background: #000;
+			position: absolute;
+			bottom: 0;
+			left: 0;	
+			/* width: 0; */
+			transition: transform 1s ease;
+			transform: scale(0);
+		}
+		a:hover:before{
+			/* width: 100%; */
+			transform: scale(1);
+			transition: transform 1s ease;
+		}
+	</style>
+	</head>
+	<body>		
+    	<a href="javascript:void(0)">乌拉乌拉</a>
+	</body>
+</html>
