@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>04-jq - which</title>
+		<meta name="description" content="描述内容">
+		<meta name="keywords" content="关键词，关键字">
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.box{
+				width: 100px;
+				height: 100px;
+				background: skyblue;
+			}
+		</style>
+			<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+	</head>
+<body>
+    
+    <div  id="box" style="width:200px;"></div>
+	<input class="input" type="checkbox" checked="checked" title="box">
+	<script>
+		console.log($("input").prop("title"))
+		$('input').removeProp('class');
+		$('#box').removeAttr('id');
+	</script>
+
+    <script>
+    	/*
+			attr()
+				操作自定义标签属性
+			prop()
+				操作合法标签属性
+    	*/
+    	// $('.box').attr( 'title','box' )  // 设置单个属性  多个就和 css 一样
+    /*	$('.box').attr({
+    		"乌拉" : "web",
+    		"id" :  "warp"
+     	})*/
+     	/*$('.box').prop({
+     		"id" : "box",
+     		"which" : "python"
+     
+     	})*/
+    	//console.log( $('.box').attr('乌拉') ) // 给一个值的获取
+    	//console.log( '----------------' )
+    	//console.log( $('.box').prop('id') ) // 给一个值的获取
+
+    	
+    </script>
+    
+</body>
+</html>

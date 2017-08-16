@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>HTML模板 - which</title>
+		<meta name="description" content="描述内容">
+		<meta name="keywords" content="关键词，关键字">
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+		</style>
+		<!-- <script src="https://cdn.bootcss.com/jquery/1.2.6/jquery.js"></script> -->
+		<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+		<!-- <script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.js"></script> -->
+	</head>
+<body>
+	<div id="box"></div>
+    <script>
+		 //为 div 元素添加合法标签 class
+        $('div').prop('class','box');
+        //此时 div 元素的 class 值为 box
+        console.log($('div').prop('class')); // 打印box
+        // 已经不能删除了
+        $('div').removeProp('class');
+        //删除后 div 元素的 class 特性值还是 box 
+		console.log($('div').prop('class')); // 打印box
+
+    </script>
+    
+</body>
+</html>

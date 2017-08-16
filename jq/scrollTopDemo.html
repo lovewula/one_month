@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>scrollTopDemo - which</title>
+		<meta name="description" content="描述内容">
+		<meta name="keywords" content="关键词，关键字">
+		<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+		<link rel="stylesheet" href="https://at.alicdn.com/t/font_uani1hj6905p14i.css">
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+				text-decoration: none;
+			}
+			body{
+				background: gray;
+				height: 2000px;
+			}
+			.w_top{
+				width: 50px;
+				height: 50px;
+				position: fixed;
+				bottom: 70px;
+				right: 60px;
+				display: none;
+			}
+			.icon-up{
+				display: block;
+				text-align: center;
+				line-height: 50px;
+				font-size: 25px;
+				color: #fff;
+			}
+		</style>
+	</head>
+<body>
+    <div class="w_top">
+    	<a href="javascript:void(0)" class="top">
+    		<i class="iconfont icon-up"></i>
+    	</a>
+    </div>
+    <script>
+    	// 点击返回顶部
+    	$('.w_top').click(function(){
+    		$('html,body').animate({
+    			"scrollTop" : 0
+    		},1000)
+    	});
+    	// 设置滚动条
+    	$(window).scroll(function(){
+    		if( $(window).scrollTop() >= 100){
+    			// $('.w_top').css("display","block");
+    			// $('.w_top').show(2000);
+    			$('.w_top').fadeIn(1000); //  没讲fadeIn 之前先使用css样式
+    		}else {
+    			// $('.w_top').css("display","none");
+    			// $('.w_top').hide(2000);
+    			$('.w_top').stop(true,true).fadeOut(1000)//  没讲fadeOut 之前先使用css样式
+    			
+    		}
+    	})
+
+    </script>
+    
+</body>
+</html>

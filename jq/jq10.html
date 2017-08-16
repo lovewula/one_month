@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>HTML模板 - which</title>
+		<meta name="description" content="描述内容">
+		<meta name="keywords" content="关键词，关键字">
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			body{
+				background:gray;
+				height: 2000px;
+			}
+			#w_top{
+				position: fixed;
+				right: 50px;
+				bottom: 50px;
+				width: 50px;
+				height: 50px;
+				background: red;
+				cursor: pointer;
+				display: none;
+			}
+		</style>
+		<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+	</head>
+<body>
+    <div id="box"></div>
+    <div id="w_top"></div>
+    <script>
+    	$.fn.extend({
+    		"which" : function(){
+    			$(this).css({
+    				"width" : "100px",
+    				"height" : "100px",
+    				"background" : "skyblue",
+    				"display" : "none",
+    			}).fadeIn(1000);
+    		},
+    		'wula' : function(){
+    			var $this = $(this);
+    			$($this).click(function(){
+    				$('html,body').animate({
+    					"scrollTop" : 0
+    				},1000)
+    			})
+    			$(window).scroll(function(){
+	    			if($(window).scrollTop() > 100){
+	    				// alert($this);
+	    				$($this).fadeIn(1000);
+	    			}else{
+	    				$($this).stop(true, true).fadeOut(1000);
+	    			}			
+    			});
+    		},
+    	});
+    	
+    	$("#box").which();
+    	$("#w_top").wula();
+    </script>
+    
+</body>
+</html>

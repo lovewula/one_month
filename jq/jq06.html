@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>06-jq - which</title>
+		<meta name="description" content="描述内容">
+		<meta name="keywords" content="关键词，关键字">
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			body{
+				height: 3000px;
+				width: 2000px;
+			}
+			.on{
+				color: red;
+			}
+		</style>
+		<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+	</head>
+<body>
+	<input type="text" value="">
+    <div>我是一个div</div>
+    <p>我是一个p1</p>
+    <p class="on">我是一个p2</p>
+    <p>我是一个p3</p>
+    <p>我是一个p4</p>
+    <p>我是一个p5</p>
+    <script>
+    	$('input').val('which')
+    	$('div').addClass('on wrap box'); // 添加多个使用空格
+    	$('div').removeClass('on box');  //什么都不加移除所以class
+    	$('div').prop('class','box1');  //什么都不加移除所以class
+    	// $('p').toggleClass('warp');  //什么都不加移除所以class
+    	$(window).scroll(function(){
+    		var t = $(document).scrollTop();  // 滚动条距离顶部的距离
+    		var l = $(document).scrollLeft(); // 滚动条距离左边的距离
+    		console.log('距离顶部'+t)
+    		console.log('距离左边'+l)
+    	});
+    </script>
+    
+</body>
+</html>

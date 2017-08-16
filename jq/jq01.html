@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>01-jq - which</title>
+		<meta name="description" content="描述内容">
+		<meta name="keywords" content="关键词，关键字">
+		<style type="text/css">
+			body{
+				background:#000; 
+			}
+			img{
+				display: none;
+			}
+			a.cache{
+				position: absolute;
+				right: 25px;
+				bottom: 20px;
+				display: block;
+			}
+			.box{
+				width: 500px;
+				height: 300px;
+				background: skyblue;
+				margin: 10px;
+			}
+		</style>
+	</head>
+<body>
+  
+    <a class="cache" href="javascript:alert('缓存清除成功');">清除缓存</a>
+    <div class="box">
+    	123
+    	<p class='wula'>乌拉</p>
+    	<p>这是第一个div第二个p</p>
+		<p>这是第一个div第三个p</p>
+    </div>
+    <div class="box">qwe
+		<span>第二个div的第一个span</span>
+		<span>第二个div的第二个span</span>
+    </div>
+    <div class="box">which
+		<p>这是第二个div第一个p</p>
+		<p>这是第二个div第二个p</p>
+		<p>这是第二个div第三个p</p>
+    </div>
+    <input type="text"  name="username"  placeholder="请输入您的" />
+    <input type="text"  name="password"  placeholder="请输入您的" />
+    <input type="text"  name="email" placeholder="请输入您的"  />
+   <!--  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script> -->
+<script src="https://cdn.bootcss.com/jquery/3.0.0/jquery.js"></script>
+    <script>
+
+    	// console.log($('.box').length);
+    	// console.log($('.box').size());
+    	/*jq 对象转js对象
+    		*/
+	    	// $('p').html('123');
+	    	// $('p')[0].innerHTML = '123';
+	    	// $('p').get(0).innerHTML = '123';
+    	/*js 对象转jq对象
+    		*/
+	    	// var aP = document.getElementsByTagName('p');
+	    	// $('html').click(function() {
+	    	// 	$(aP).html(123);
+	    	// });
+	    	// document.onclick = function(){
+	    	// 	$(aP).html(123);
+	    	// }
+
+    /*	var oBox = document.getElementsByClassName('box')[0];
+    	oBox.onclick = function(){
+    		alert(1);
+    	}*/
+    	/*.eq() 选择元素 从0开始
+			 $(function(){
+		    	$('.box').eq(0).click(function(){
+		    		alert(2)
+		    	});
+		    })
+    	*/
+
+	/*
+		append() - 在被选元素的结尾插入内容
+		prepend() - 在被选元素的开头插入内容
+		after() - 在被选元素之后插入内容
+		before() - 在被选元素之前插入内容
+	*/
+	// $('.box').eq(2).append( $('.wula') )
+	// $('<strong>这是prependTo的内容</strong>').prependTo('.box span')
+	// $('.box').empty()  // 清除子元素
+	// $('.box').remove()  // 清除所以内容包括自己
+	// $('.box p').before('<a href="#">这是before的内容</a>')  // 之前
+	// $('.box p').append('<strong>这是append的内容</strong>') 	
+	$('<strong>这是appendTo的内容</strong>').appendTo('.box span') 	
+	// $('.box p').prepend('<strong>这是prepend的内容</strong>') 	
+	// $('.box p').after('<a href="#">这是after的内容</a>')  // 已经是不在p标签里 之后
+
+    	// 获取值
+
+			// alert($('.box p').text('qwe'))
+			// console.log($('.box').html());
+			// console.log($('.box').text());
+
+    		// $('.box p').text('<h1>hello</h1>');  
+    		// $('.box p').html($('.box p').html()+ '<h1>hello</h1>');
+    		/*                                                   
+				获取input标签的值
+    		*/
+	    	// $('html').click(function() {
+	    	// 	alert($('input[name=username]').val())
+	    	// });
+    </script>
+</body>
+</html>

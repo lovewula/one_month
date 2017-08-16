@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>03-jq - which</title>
+		<meta name="description" content="描述内容">
+		<meta name="keywords" content="关键词，关键字">
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			#parent{
+				width:100px;
+				height:100px;
+				background:#6ff;
+				padding:50px;
+			}
+			#child{
+				width:100px;
+				height:200px;
+				background:pink;
+			}
+		</style>
+		<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+	</head>
+<body>
+    <div id="parent">
+    	<div id="child">
+    		<ul>
+    			<li>11111</li>
+    			<li>22222</li>
+    			<li>33333</li>
+    			<li>44444</li>
+    			<li>55555</li>
+    		</ul>
+    	</div>
+    </div>
+
+    <script>
+    	/*
+			jq的事件
+				去on变为方法传事件函数变参数
+    	*/
+
+    	/*$('#box').click(function(){
+    		alert(1);
+    	});*/
+    	/*
+    	$('#child').hover(function() {
+    		console.log(1);
+    	}, function() {
+    		console.log(2);3
+    	});
+		*/
+		/*
+		$("#child ul li").click(function(){
+			alert( $(this).html() )
+		});
+		*/
+		
+		$('#parent').on('click', 'li', function(){
+			alert( $(this).html() )
+		})
+		$("#child ul").append('<li>66666</li>')
+
+    </script>
+    
+</body>
+</html>

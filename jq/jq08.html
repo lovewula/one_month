@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>jq08 - which</title>
+		<meta name="description" content="描述内容">
+		<meta name="keywords" content="关键词，关键字">
+		<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+		</style>
+	</head>
+<body>
+	<div id="box">
+	    <p class="on which wula"></p>
+	    <div>
+	    	<p> <a href=""></a> </p>
+	    	<span> <a href=""></a> </span>
+	    	<span> <i></i> </span>
+	    	<span> <i></i> </span>
+	    	<span> <a href=""></a> </span>
+	    </div>	
+	</div>
+    <script>
+    	/*
+			hasClass()
+				传className 返回 布尔值 如果有 返回true 如果没有 返回false
+			is 
+    	*/
+    	// console.log($('p').hasClass('which'));
+    	// alert( $('.on').is('p') )
+    	// var $obj = $('div').children('span').children( 'i' )  // 两次就是孙子元素
+    	// alert( $obj.length )
+    	//  $obj.append('which')
+    	// $('div').find().append('wula');
+    	// $('span').parent().append('qwe')
+    	// $('span').parents('div').append('qwe')
+
+    	$('span').siblings('span').append('which')
+
+    </script>
+    
+</body>
+</html>
