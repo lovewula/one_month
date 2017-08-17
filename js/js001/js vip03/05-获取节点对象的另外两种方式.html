@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>please enter your title</title>
+		<meta charset="gbk">
+		<meta name="Author" content="潭州学院-阿飞老师">
+		<style type='text/css'>
+			*{ margin:0; padding:0;}
+
+		</style>
+		<script type="text/javascript" src=''></script>
+	</head>
+	<body>
+		<!-- 
+			<div class="box"></div>
+			<div class="box"></div>
+			<div class="box"></div>
+			<div></div> 
+
+			<div id="box">
+				<p></p>
+				<p></p>
+				<p></p>
+			</div>
+
+			<p></p>
+		-->
+
+		<div id="wrap" class="box"></div>
+
+
+		<script type="text/javascript">
+			/**/
+				/*
+				var aBox = document.getElementsByClassName('box');
+
+				alert( aBox.length );
+				
+				aBox[0].innerHTML = '123456';
+				aBox[1].innerHTML = '123456';
+				aBox[2].innerHTML = '123456';
+				*/
+
+				//var arr = [1,2,3];
+				/*
+				var aDiv = document.getElementsByTagName('div');
+				alert( aDiv.length );
+				*/
+
+				/*
+				document.getElementById()
+					//前面的主体对象必须是document
+					//静态方法
+
+				document.getElementsByClassName()
+				document.getElementsByTagName()
+					//前面的主体对象不一定是document
+					//动态方法
+				*/
+
+				//var aP = document.getElementById('box').getElementsByTagName('p');
+
+				//alert( aP.length )
+
+			var oDiv = document.getElementById('wrap');
+			
+			var oBox = document.getElementsByClassName('box')[0];
+
+			//var aBox = document.getElementsByClassName('box');
+
+			
+
+			//oDiv  aBox[0]
+			//oDiv.id = 'qwe';
+			//oDiv.innerHTML = '123456';
+
+			oDiv.className = 'qwe';
+
+			//alert( aBox.length )
+			//aBox[0].innerHTML = '123456';
+			oBox.innerHTML = '123456';
+
+		</script>
+	</body>
+</html>

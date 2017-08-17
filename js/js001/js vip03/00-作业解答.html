@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>please enter your title</title>
+		<meta charset="gbk">
+		<meta name="Author" content="潭州学院-阿飞老师">
+		<style type='text/css'>
+			*{ margin:0; padding:0;}
+			#soft{
+				list-style:none;
+				width:225px;
+				height:35px;
+				line-height:35px;
+				color:#fff;
+				text-align:center;
+				font-family:'Microsoft yahei';
+				background:#333;
+				cursor:pointer;
+				position:relative;
+			}
+
+			#hide{
+				width:200px;
+				height:465px;
+				background:#ddd;
+				position:absolute;
+				left:225px;
+				top:0px;
+				padding-top:10px;
+				display:none;
+			}
+			#hide ul li{
+				list-style:none;
+			}
+			#hide ul li a{
+				color:#333;
+				font-size:14px;
+				text-decoration:none;
+				display:block;
+				line-height:35px;
+				text-align:center;
+				font-family:'Microsoft yahei';
+			}
+			#hide ul li a:hover{
+				color:#cc0000;
+			}
+		</style>
+		<script type="text/javascript" src=''></script>
+	</head>
+	<body>
+		
+		<ul>
+			<li id='soft'>
+				软件培训
+			</li>
+		</ul>
+
+		<div id="hide">
+			<ul>
+				<li><a href='#'>java</a></li>
+				<li><a href='#'>web前端</a></li>
+				<li><a href='#'>安卓</a></li>
+				<li><a href='#'>PHP</a></li>
+				<li><a href='#'>C++</a></li>
+				<li><a href='#'>软件测试</a></li>
+				<li><a href='#'>python</a></li>
+				<li><a href='#'>.net</a></li>
+				<li><a href='#'>iOS</a></li>
+				<li><a href='#'>大数据</a></li>
+				<li><a href='#'>嵌入式</a></li>
+			</ul>
+		</div>
+
+		<script type="text/javascript">
+			
+			var oSoft = document.getElementById('soft');
+			var oHide = document.getElementById('hide');
+
+			oSoft.onmouseenter = function(){
+				this.style.background = '#999';
+				oHide.style.display = 'block';
+			};
+			oSoft.onmouseleave = function(){
+				this.style.background = '#333';
+				oHide.style.display = 'none';
+			};
+			oHide.onmouseenter = function(){
+				oSoft.style.background = '#999';
+				this.style.display = 'block';
+			};
+			oHide.onmouseleave = function(){
+				oSoft.style.background = '#333';
+				this.style.display = 'none';
+			};
+
+		</script>
+	</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>please enter your title</title>
+		<meta charset="gbk">
+		<meta name="Author" content="潭州学院-阿飞老师">
+		<style type='text/css'>
+			*{ margin:0; padding:0;font-family:'Microsoft yahei';list-style:none;}
+			li.list{
+				width:225px;
+				height:35px;
+				line-height:35px;
+				text-align:center;
+				color:#fff;
+				background:#333;
+				font-size:14px;
+			}
+			.hide{
+				padding:10px 0;
+				position:absolute;
+				left:225px;
+				top:0;
+				background:#ddd;
+				display:none;
+			}
+			.hide ul li a{
+				display:block;
+				line-height:35px;
+				height:35px;
+				width:200px;
+				color:#000;
+				text-align:center;
+				text-decoration:none;
+			}
+			.hide ul li a:hover{
+				color:#cc0000;
+			}
+		</style>
+		<script type="text/javascript" src=''></script>
+	</head>
+	<body>
+		
+		<ul>
+			<li class='list'>软件培训
+				<div class="hide">
+					<ul>
+						<li><a href="">java</a></li>
+						<li><a href="">web前端</a></li>
+						<li><a href="">安卓</a></li>
+						<li><a href="">PHP</a></li>
+						<li><a href="">C++</a></li>
+						<li><a href="">软件测试</a></li>
+						<li><a href="">python</a></li>
+						<li><a href="">.net</a></li>
+						<li><a href="">iOS</a></li>
+						<li><a href="">大数据</a></li>
+						<li><a href="">嵌入式</a></li>
+					</ul>
+				
+				</div>
+			</li>
+			<li class='list'>视觉设计
+				<div class="hide">
+					<ul>
+						<li><a href="">2</a></li>
+						<li><a href="">2</a></li>
+						<li><a href="">2</a></li>
+						<li><a href="">2222</a></li>
+						<li><a href="">C2222+</a></li>
+						<li><a href="">2222</a></li>
+						<li><a href="">2222</a></li>
+						<li><a href="">.2222</a></li>
+						<li><a href="">2222</a></li>
+						<li><a href="">2222</a></li>
+						<li><a href="">2222</a></li>
+					</ul>
+				
+				</div>
+			</li>
+			<li class='list'>营销培训
+				<div class="hide">
+					<ul>
+						<li><a href="">3333</a></li>
+						<li><a href="">3333</a></li>
+						<li><a href="">3333</a></li>
+						<li><a href="">3333</a></li>
+						<li><a href="">C3333+</a></li>
+						<li><a href="">3333</a></li>
+						<li><a href="">3333</a></li>
+						<li><a href="">.3333</a></li>
+						<li><a href="">3333</a></li>
+						<li><a href="">3333</a></li>
+						<li><a href="">3333</a></li>
+					</ul>
+				
+				</div>
+			</li>
+			<li class='list'>工业设计
+				<div class="hide">
+					<ul>
+						<li><a href="">54444</a></li>
+						<li><a href="">we54444b前端</a></li>
+						<li><a href="">安54444卓</a></li>
+						<li><a href="">54444</a></li>
+						<li><a href="">C54444+</a></li>
+						<li><a href="">54444</a></li>
+						<li><a href="">54444</a></li>
+						<li><a href="">.54444</a></li>
+						<li><a href="">54444</a></li>
+						<li><a href="">54444</a></li>
+						<li><a href="">54444</a></li>
+					</ul>
+				
+				</div>
+			</li>
+			<li class='list'>游戏动漫
+				<div class="hide">
+					<ul>
+						<li><a href="">55555</a></li>
+						<li><a href="">55555</a></li>
+						<li><a href="">55555</a></li>
+						<li><a href="">55555</a></li>
+						<li><a href="">C55555+</a></li>
+						<li><a href="">55555</a></li>
+						<li><a href="">55555</a></li>
+						<li><a href="">.55555</a></li>
+						<li><a href="">55555</a></li>
+						<li><a href="">55555</a></li>
+						<li><a href="">55555</a></li>
+					</ul>
+				
+				</div>
+			</li>
+		</ul>
+
+		<script type="text/javascript">
+			
+			var aList = document.getElementsByClassName('list');
+			
+			for (var i=0;i<aList.length;i++ )
+			{
+				aList[i].onmouseenter = function(){
+					var oHide = this.getElementsByClassName('hide')[0];
+					oHide.style.display = 'block';
+				};
+				aList[i].onmouseleave = function(){
+					var oHide = this.getElementsByClassName('hide')[0];
+					oHide.style.display = 'none';
+				};
+			}
+
+			/*
+			aList[0].onmouseenter = function(){
+				var oHide = this.getElementsByClassName('hide')[0];
+				oHide.style.display = 'block';
+			}
+			aList[0].onmouseleave = function(){
+				var oHide = this.getElementsByClassName('hide')[0];
+				oHide.style.display = 'none';
+			}
+			aList[1].onmouseenter = function(){
+				var oHide = this.getElementsByClassName('hide')[0];
+				oHide.style.display = 'block';
+			}
+			aList[1].onmouseleave = function(){
+				var oHide = this.getElementsByClassName('hide')[0];
+				oHide.style.display = 'none';
+			}
+			aList[2].onmouseenter = function(){
+				var oHide = this.getElementsByClassName('hide')[0];
+				oHide.style.display = 'block';
+			}
+			aList[2].onmouseleave = function(){
+				var oHide = this.getElementsByClassName('hide')[0];
+				oHide.style.display = 'none';
+			}
+			aList[3].onmouseenter = function(){
+				var oHide = this.getElementsByClassName('hide')[0];
+				oHide.style.display = 'block';
+			}
+			aList[3].onmouseleave = function(){
+				var oHide = this.getElementsByClassName('hide')[0];
+				oHide.style.display = 'none';
+			}
+			aList[4].onmouseenter = function(){
+				var oHide = this.getElementsByClassName('hide')[0];
+				oHide.style.display = 'block';
+			}
+			aList[4].onmouseleave = function(){
+				var oHide = this.getElementsByClassName('hide')[0];
+				oHide.style.display = 'none';
+			}
+			*/
+
+		</script>
+	</body>
+</html>

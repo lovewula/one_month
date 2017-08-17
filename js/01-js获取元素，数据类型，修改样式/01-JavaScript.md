@@ -64,8 +64,6 @@ docuemnt.getElementById('id名').onclick = funtion(){
 
 然后获取到了 `dom`元素，然后就使用`innerHTML 和 innerText `来给元素加上内容`innerHTML` 和` innerText` 两者之间的不同,`innerHTML` 可以解析`HTML`标签
 
-
-
 然后讲一个`document.write`这就是向`body`屁股后添加内容，然后这种`document.write()`只能在**文档流**结束之前使用
 
 document.write()在文档流后，就会重新覆盖页面

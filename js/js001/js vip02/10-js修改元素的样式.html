@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>please enter your title</title>
+		<meta charset="utf-8">
+		<meta name="Author" content="">
+		<style type='text/css' id='css'>
+			*{ margin:0; padding:0;}
+			div#box{
+				width:100px;
+				height:100px;
+				background:red;
+			}
+		</style>
+		
+	</head>
+	<body>
+
+		<div id="box" style="border:10px solid green"></div>
+		<script>
+			/*
+				jsÐÞ¸ÄÑùÊ½£¡
+				.style
+				ÍÕ·å
+			*/
+
+			var oDiv = document.getElementById('box');
+			//var oStyle = document.getElementById('css');
+			//oDiv.style.background = 'blue';
+			
+			oDiv.onclick = function(){
+				//oStyle.innerHTML += '#box{background:blue;}';
+				/*
+				this.style.background = 'blue';
+				this.style.width = '50px';
+				this.style.height = '50px';
+				*/
+				this.style.cssText += 'background:blue;width:50px;height:50px;margin-left:50px;';
+				/*
+				this.style.marginLeft = '50px';
+				this.style.cssFloat = 'left';
+				this.style.styleFloat = 'left';
+				*/
+			};
+			
+		</script>
+	</body>
+</html>
+

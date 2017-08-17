@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>please enter your title</title>
+		<meta charset="gbk">
+		<meta name="Author" content="潭州学院-阿飞老师">
+		<style type='text/css'>
+			*{ margin:0; padding:0;}
+			#box{
+				width:100px;
+				height:100px;
+				background:red;
+			}
+
+		</style>
+		<script type="text/javascript" src=''></script>
+	</head>
+	<body>
+		
+		<div id="box"></div>
+
+		<script type="text/javascript">
+			
+			/*
+				[]
+			*/
+
+			//var arr = [ 1 , 2 , '阿飞'];
+			//arr[0] = 2
+
+			var oBox = document.getElementById('box');
+
+			var x = 'width';
+
+			document['onclick'] = function(){
+				oBox['style'][x] = '200px';
+			};
+
+		</script>
+	</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>please enter your title</title>
+		<meta charset="gbk">
+		<meta name="Author" content="">
+		<style type='text/css'>
+			
+			#box{
+				width:150px;
+				height:20px;
+				background:#999;
+				font-family:'Microsoft yahei';
+				font-size:12px;
+				line-height:20px;
+				text-align:center;
+				border-rADIUS:10PX;
+				color:#fff;
+				font-weight:bold;
+				margin-top:20px;
+			}
+
+		</style>
+		
+	</head>
+	<body>
+
+		<div id="box">Hello World！</div>
+
+		<script>
+			/*
+				onmouseenter / onmouseover 移入
+				onmouseleave / onmouseout 移出
+			*/
+
+			/*
+					定义/声明 变量：
+			*/
+			
+			/*
+			var goudan = document.getElementById('box');
+			
+			goudan.onmouseenter = function(){
+				this.innerHTML = '';
+			};
+
+			goudan.onmouseleave = function(){
+				this.innerHTML = 'Hello World！';
+			};
+			*/
+			
+			var dachui = document.getElementById('box');
+			
+			dachui.innerHTML = '123';
+
+			document.onclick = function(){
+				dachui.innerHTML = '456';
+			};
+
+
+		</script>
+	</body>
+</html>
+

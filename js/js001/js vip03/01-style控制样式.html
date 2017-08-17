@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>please enter your title</title>
+		<meta charset="gbk">
+		<meta name="Author" content="潭州学院-阿飞老师">
+		<style type='text/css'>
+			*{ margin:0; padding:0;}
+			#box{
+				width:100px;
+				height:100px;
+				background:red;
+			}
+			#box.on{
+				width:200px;
+				height:200px;
+				border:1px solid green;
+				margin-left:50px;
+				padding-top:10px;
+			}
+		</style>
+		<script type="text/javascript" src=''></script>
+	</head>
+	<body>
+		
+		<div id="box"></div>
+		<button id='btn1'>变化</button>
+		<button id='btn2'>还原</button>
+		<script type="text/javascript">
+			
+			var oBox = document.getElementById('box');
+			var oBtn1 = document.getElementById('btn1');
+			var oBtn2 = document.getElementById('btn2');
+
+			oBtn1.onclick = function(){
+				oBox.className = 'on';
+				/*
+				oBox.style.width = '200px';
+				oBox.style.height = '200px';
+				oBox.style.border = '1px solid green';
+				oBox.style.marginLeft = '50px';
+				oBox.style.paddingTop = '10px';
+				*/
+			};
+			oBtn2.onclick = function(){
+				oBox.className = '';
+				/*
+				oBox.style.width = '100px';
+				oBox.style.height = '100px';
+				oBox.style.border = '0px solid green';
+				oBox.style.marginLeft = '00px';
+				oBox.style.paddingTop = '00px';
+				*/
+			};
+			
+		</script>
+	</body>
+</html>
