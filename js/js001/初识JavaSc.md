@@ -49,8 +49,29 @@
   * 不能是`js`的关键字或者是保留字 
   * 可以是**字母、数字、下划线(`_`)、$**但是不能是数字开头
 
-* `JavaScript`修改`CSS`样式
+* `JavaScript`数据类型
 
-  * ``
+  * 使用`typeof` 查看数据类型
+  * 原始数据类型
+    * `number`        //数字类型
+    * `string`       //字符串
+    * `boolean`     //布尔类型  `true/false`
+    * `function`    // 函数类型
+    * `undefined`  // 未定义
+  * 对象数据类型
+    * `object`       // 对象数据类型
+
+* `JavaScript`修改样式
+
+  * 给`style`标签加上一个`id`,通过`innerHTML`追加内容
+  * 直接获取元素，然后通过修改内联样式来修改样式
+
+* `JavaScript` 调试代码
+
+  * `alert`
+  * `console.log`
 
 * `JavaScript`
+
+  * ​
+
