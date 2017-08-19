@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- 设置编码为utf8 -->
+		<meta charset="utf-8" />
+		<title>navDemo - which</title>
+		<meta name="keywords" content="关键字">
+		<meta name="Description" content="描述内容">
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			body{
+				background: skyblue;
+			}
+			#header{
+				height: 50px;
+				background: black;
+			}
+			.nav{
+				color: #fff;
+				font-size: 18px;
+				margin-left: 50px;
+			}
+			.nav ul li{
+				list-style: none;
+				float: left;
+				width: 100px;
+				height: 50px;
+				line-height: 50px;
+				text-align: center;
+				cursor: pointer;
+				position: relative;
+			}
+			.nav ul li .n-child{
+				position: absolute;
+				top: -200px;
+				width: 100px;
+				text-align: center;
+				height: 200px;
+				background: black;
+				transition: all .5s linear;
+			}
+			.nav ul li .n-child li{
+				height: 40px;
+				line-height: 40px;
+			}
+			.nav ul li:nth-child(1):hover .n-child{
+				/* height: 200px; */
+				top: 50px;
+				transition: all .5s linear;
+				/* display: block; */
+			}
+		</style>
+	</head>
+	<body>
+		<div id="header">
+			<div class="nav">
+				<ul>
+					<li>
+						1which
+						<ul class="n-child">
+							<li>01Which</li>
+							<li>02Which</li>
+							<li>03Which</li>
+							<li>04Which</li>
+							<li>05Which</li>
+						</ul>
+					</li>
+					<li>2which</li>
+					<li>3which</li>
+					<li>4which</li>
+					<li>5which</li>
+				</ul>
+			</div>			
+		</div>
+
+		<script>
+			
+		</script>
+	</body>
+</html>
