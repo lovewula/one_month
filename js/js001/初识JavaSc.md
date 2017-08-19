@@ -71,7 +71,13 @@
   * `alert`
   * `console.log`
 
-* `JavaScript`
+* `JavaScript`的`[]的使用`
 
-  * ​
+  * 涉及到一些变量就需要`[]`
+
+* `JavaScript`的循环和条件语句
+
+  * `for`
+  * `while`
+  * `do..while`
 
