@@ -75,9 +75,24 @@
 
   * 涉及到一些变量就需要`[]`
 
-* `JavaScript`的循环和条件语句
+* `JavaScript`的循环
 
   * `for`
   * `while`
   * `do..while`
+
+* `break`和`continue`对循环的影响
+
+  * `break`跳出本次循环
+  * `continue` 跳出当前循环
+
+* `JavaScript`的条件语句
+
+  * `if` 
+
+  * `if .. elseif .. else ..`
+
+  * `if .. else`
+
+    ​
 
