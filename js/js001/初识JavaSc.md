@@ -65,6 +65,7 @@
 
   * 给`style`标签加上一个`id`,通过`innerHTML`追加内容
   * 直接获取元素，然后通过修改内联样式来修改样式
+  * 使用`class`名字 `this.className = ''`
 
 * `JavaScript` 调试代码
 
