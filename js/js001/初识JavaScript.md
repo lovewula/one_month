@@ -81,6 +81,7 @@
   * `for`
   * `while`
   * `do..while`
+  * `switch`
 
 * `break`和`continue`对循环的影响
 
