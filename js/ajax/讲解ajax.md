@@ -94,10 +94,6 @@ document.onclick = function () {
 
 
 
-
-
-
-
 封装Ajax
 
 ```javascript
@@ -106,7 +102,7 @@ document.onclick = function () {
 	<head>
 		<title>please enter your title</title>
 		<meta charset="gbk">
-		<meta name="Author" content="潭州学院-阿飞老师">
+		<meta name="Author" content="">
 		<style type='text/css'>
 			*{ margin:0; padding:0;}
 
@@ -185,7 +181,6 @@ document.onclick = function () {
 		</script>
 	</body>
 </html>
-
 ```
 
 

@@ -1,6 +1,6 @@
 ### 原生AJAX
 
-Ajax主要就是使用【XmlHttpRequest】对象来完成请求的操作，该对象在浏览器中具存在，（除了早期的IE）,Ajax首次出现在IE5.5中存在（ActiveX控件）
+Ajax主要就是使用【`XmlHttpRequest`】对象来完成请求的操作，该对象在浏览器中具存在，（除了早期的IE）,Ajax首次出现在IE5.5中存在（ActiveX控件）
 
 #### 1.XmlHttpRequest对象介绍：
 
