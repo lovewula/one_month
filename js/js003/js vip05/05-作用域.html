@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>please enter your title</title>
+		<meta charset="gbk">
+		<meta name="Author" content="潭州学院-阿飞老师">
+		<style type='text/css'>
+			*{ margin:0; padding:0;}
+
+		</style>
+		<script type="text/javascript" src=''></script>
+	</head>
+	<body>
+		
+		<script type="text/javascript">
+			/*
+				js的解析顺序：
+					1.定义：
+						找var
+						找function
+					2.执行：
+
+				作用域：
+					script是最大的作用域，function在执行的时候回产生一个新作用域
+					每产生一个新作用域，按照解析顺序解析代码
+					
+					作用域链：
+						当子作用域没有的时候，子作用域可以从父作用域拿取/修改东西，不可逆
+						
+			*/
+			/*
+				alert( x );
+				alert( a );
+
+				var x = 10;
+				function a(){alert(1)};
+
+				alert(x);
+				*/
+
+				/*
+					1.定义：
+						var x;
+						function a(){alert(1)};
+					2.执行：
+						alert( x );
+						alert(a);
+						x = 10;
+						alert(x);
+				*/
+			
+			/*
+			var x = 10;
+			fn();
+			function fn(){
+				var x = 20;
+				alert(x);
+			}
+			alert( x );
+			
+				1.定义：
+					var x；
+					function fn(){
+						var x = 20;
+						alert(x);
+					}
+				2.执行：
+					x = 10;
+					fn();   =====>		1.定义：
+											var x;
+										2.执行：
+											x = 20;
+											alert(x); //20
+					alert( x ); //10					
+			*/
+/*
+			var x = 10;
+			fn();
+			function fn(){
+				x = 20;
+				alert(x);
+			}
+			alert( x );
+			
+				1.定义：
+					var x；
+					function fn(){
+						var x = 20;
+						alert(x);
+					}
+				2.执行：
+					x = 10;
+					fn();   =====>		1.定义：
+											
+										2.执行：
+					x = 20;
+					alert( x );
+			*/
+		</script>
+	</body>
+</html>

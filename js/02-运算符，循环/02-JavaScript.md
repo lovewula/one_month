@@ -123,7 +123,7 @@ var b = ++a ;  // a = a+1 ; b = a
 > Boolean转Number ==> **true为1、fasel为0**
 
 ```javascript
-var a = 1 < 2  &&   3 >2   // false  true  往后走 遇到 false就听
+var a = 1 < 2  &&   3 >2   // false  true  往后走 遇到 false就停
 
 var a  = 1>2 || 2>3  // false  flase 往后走，遇到真就停
 
