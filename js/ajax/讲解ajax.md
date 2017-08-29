@@ -220,6 +220,7 @@ if flask.request.is_xhr:
     for x in range(1,10):
         article = {}
         article['title'] = 'title' + str(random.randint(100,1000))
+     
         articles.append(article)
     return jsonify({'articles':articles})
 ```
