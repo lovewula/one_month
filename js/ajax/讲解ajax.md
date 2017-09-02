@@ -156,7 +156,7 @@ document.onclick = function () {
 				//	error : 请求失败的回调函数，第一个形参代表HTTP状态码，function
 				//}
 			function ajax(mJson){
-				var type=mJson.type||'get';
+				var type=mJson.type || 'get';
 				var url=mJson.url;
 				var data=mJson.data;
 				var dataStr='';
